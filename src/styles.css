@@ -53,6 +53,7 @@ html {
     padding-bottom: 0.4rem;
     cursor: default;
     transition: all 0.2s ease-in-out;
+    user-select: none; 
 }
 
 .project-button:hover {
