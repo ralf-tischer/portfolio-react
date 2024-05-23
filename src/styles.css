@@ -1,0 +1,66 @@
+html {
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.project-card {
+    display: flexbox;
+    flex-direction: row;
+    justify-content: center;
+    border-style: solid;
+    border-radius: 1rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    padding: 0.5rem;
+}
+
+.project-title-box {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: baseline;
+    background-color: rgb(230, 230, 230);
+    border-radius: 0.5rem;
+}
+
+.project-img-box {
+    display: flex;
+    flex-direction: row;
+}
+
+.project-img-content {
+    display: flex;
+    margin: 0.5rem;
+}
+
+.project-title-content {
+    display: flex;
+    margin: 0.5rem;
+}
+
+.tag-box {
+    display: flex;
+    justify-content: flex-start;
+    align-items: baseline;
+    font-size: small;
+}
+
+.project-button {
+    border-radius: 1.5rem;
+    padding: 0.25rem 0.5rem;
+    display: inline-block;
+    margin-right: 0.5rem;
+    padding-top: 0.25rem;
+    padding-bottom: 0.4rem;
+    cursor: default;
+    transition: all 0.2s ease-in-out;
+}
+
+.project-button:hover {
+    box-shadow: 0 5px 5px gray;
+    transform: translateY(-2px)
+}
+
+.project-button-details {
+    background-color: rgb(200, 200, 200);
+    color: black;
+}
