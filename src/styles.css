@@ -31,7 +31,8 @@ html {
     flex-direction: row;
     justify-content: space-between;
     align-items: baseline;
-    background-color: rgb(230, 230, 230);
+    background-color: rgb(225, 225, 225);
+    color: black;
     border-radius: 0.5rem;
 }
 
@@ -54,7 +55,7 @@ html {
 }
 
 .project-img-prview {
-    width: 150px;
+    width: 200px;
     object-fit: contain;
     transition: all 0.75s ease;
 }
@@ -104,7 +105,7 @@ html {
         font-size: 16px;
     }
     .project-img-prview {
-        width: 250px;
+        width: 350px;
     }
 }
 
@@ -117,3 +118,53 @@ html {
     }
 }
 
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+  }
+  
+  .switch input { 
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+  
+  .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border-radius: 34px;
+    background-color: #ccc;
+    transition: .4s;
+  }
+  
+  .slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    border-radius: 50%;
+    background-color: white;
+    transition: .4s;
+  }
+  
+  input:checked + .slider {
+    background-color: rgb(200, 200, 200);
+  }
+  
+  input:focus + .slider {
+    box-shadow: 0 0 1px rgb(200, 200, 200);
+  }
+  
+  input:checked + .slider:before {
+    transform: translateX(26px, 0px);
+    ;
+  }
+  

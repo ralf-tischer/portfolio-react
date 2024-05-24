@@ -1,10 +1,12 @@
 import React, { useState } from 'react';
+import SwitchColorMode from './SwitchColorMode';
 
 const Navbar = () => {
     return (
-        <p>
+        <div>
             Navbar here
-        </p>
+            <SwitchColorMode />
+        </div>
     );
 }
 
