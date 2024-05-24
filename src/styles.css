@@ -54,10 +54,10 @@ html {
 }
 
 .project-img-prview {
-    width: 100px;
-    height: 100px; 
+    width: 150px;
+    object-fit: contain;
+    transition: all 0.75s ease;
 }
-
 
 /******************
 * Tag          
@@ -66,7 +66,7 @@ html {
     display: flex;
     justify-content: flex-start;
     align-items: baseline;
-    font-size: small;
+    font-size: 0.8rem;
 }
 
 
@@ -94,3 +94,26 @@ html {
     background-color: rgb(200, 200, 200);
     color: black;
 }
+
+
+/******************
+* Media Queries          
+*******************/
+@media screen and (min-width: 550px) {
+    html {
+        font-size: 16px;
+    }
+    .project-img-prview {
+        width: 250px;
+    }
+}
+
+@media screen and (min-width: 800px) {
+    html {
+        font-size: 20px;
+    }
+    .project-img-prview {
+        width: 500px;
+    }
+}
+
