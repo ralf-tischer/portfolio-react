@@ -15,7 +15,7 @@ const SwitchColorMode = ( { handleColorModeSwitch }
     
     return (
         <label className='switch'>
-            <input type="checkbox" checked onClick={handleSliderChange}></input>
+            <input type="checkbox" onClick={handleSliderChange}></input>
             <span className="slider"></span>
         </label>
     );
