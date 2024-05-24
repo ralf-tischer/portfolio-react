@@ -3,11 +3,11 @@ import React, { useState } from 'react';
 const ProjectImg = ( { project } 
                 ) => {
     
-    const filePath = "/assets/img/" + project.img; 
+    const filePath = process.env.PUBLIC_URL + "/assets/img/" + project.img; 
 
     return (
         <>
-            <img src={filePath} alt={project.title} width="150px" height="150px" ></img>
+            <img src={filePath} alt={project.title} className="project-img-prview"></img>
         </>
     );
 }
