@@ -1,18 +1,31 @@
+/******************
+* General          
+*******************/
 html {
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 14px;
+}
+
+.projects {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 100%;
 }
 
 .project-card {
-    display: flexbox;
     flex-direction: row;
     justify-content: center;
+    flex-grow: 1;
     border-style: solid;
     border-radius: 1rem;
-    margin-top: 1rem;
-    margin-bottom: 1rem;
+    margin: 0.25rem;
     padding: 0.5rem;
 }
 
+/******************
+* Title          
+*******************/
 .project-title-box {
     display: flex;
     flex-direction: row;
@@ -22,6 +35,14 @@ html {
     border-radius: 0.5rem;
 }
 
+.project-title-content {
+    display: flex;
+    margin: 0.5rem;
+}
+
+/******************
+* Image          
+*******************/
 .project-img-box {
     display: flex;
     flex-direction: row;
@@ -32,11 +53,15 @@ html {
     margin: 0.5rem;
 }
 
-.project-title-content {
-    display: flex;
-    margin: 0.5rem;
+.project-img-prview {
+    width: 100px;
+    height: 100px; 
 }
 
+
+/******************
+* Tag          
+*******************/
 .tag-box {
     display: flex;
     justify-content: flex-start;
@@ -44,6 +69,10 @@ html {
     font-size: small;
 }
 
+
+/******************
+* Button          
+*******************/
 .project-button {
     border-radius: 1.5rem;
     padding: 0.25rem 0.5rem;
