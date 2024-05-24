@@ -15,13 +15,14 @@ const Projects = () => {
     <div>
       <h1>Projects</h1>
       <Filter projects={projects} onFilter={handleFilter} />
-      
-      {filteredProjects.map((project) => (
-        <ProjectCard 
-          key={project.id} 
-          project={project} 
-        />
-      ))}
+      <div className='projects'>
+        {filteredProjects.map((project) => (
+          <ProjectCard 
+            key={project.id} 
+            project={project} 
+          />
+        ))}
+      </div>
     </div>
   );
 };
