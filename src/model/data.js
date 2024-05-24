@@ -1,9 +1,9 @@
 const PROJECTS = [
     {   id: 1, 
         title: "Project 1", 
-        short: "Short bla bluibb but sorem ipsium dkoj",
+        short: "Developed a comprehensive BOM management tool using Python, HTML/JavaScript, Flask, and SQL databases, demonstrating software development expertise and user-centric design.",
         description: "Long bla Project 1 bskö dijd ijsdkjaäidjäidn asoiuhsad i",		
-        img: "dummy.png",
+        img: "bom-nav-thumbmail.png",
         project_url: "/project"	,
         status: "open",		
         links: {},
