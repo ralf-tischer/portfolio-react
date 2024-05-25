@@ -14,11 +14,13 @@ const SwitchColorMode = ( { handleColorModeSwitch }
     };
     
     return (
-        <div>
+        <div className='switch-box'>
+            <div className='switch-label'>
+                Dark mode
+            </div>
             <label className='switch'>
-                <input type='checkbox' onClick={handleSliderChange} checked />
+                <input type='checkbox' onClick={handleSliderChange} />
                 <span></span>
-                <p>Dark mode: </p>
             </label>
         </div>
     );
