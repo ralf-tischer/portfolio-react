@@ -157,14 +157,13 @@ html {
     bottom: 4px;
     border-radius: 50%;
     background-color: white;
-    transition: 0.4s;
 }
 
 input:checked + span {
     background-color: rgb(200, 200, 200);
 }
 
-input:checked + .span:before {
+input:checked + span::before {
     transform: translateX(26px);
 }
   
