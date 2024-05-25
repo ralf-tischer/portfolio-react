@@ -47,6 +47,7 @@ html {
 .project-img-box {
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
 }
 
 .project-img-content {
@@ -55,8 +56,12 @@ html {
 }
 
 .project-img-prview {
-    width: 200px;
+    width: calc(100% - 1rem);
     object-fit: contain;
+    border-style: solid;
+    border-radius: 0.5rem;
+    border-color: rgb(200, 200, 200);
+    padding: 0.5rem;
     transition: all 0.75s ease;
 }
 
@@ -69,7 +74,6 @@ html {
     align-items: baseline;
     font-size: 0.8rem;
 }
-
 
 /******************
 * Button          
@@ -95,7 +99,6 @@ html {
     background-color: rgb(200, 200, 200);
     color: black;
 }
-
 
 /******************
 * Media Queries          
@@ -172,4 +175,3 @@ input:checked + span {
 input:checked + span::before {
     transform: translateX(calc(3rem - 1.5rem));
 }
-  
