@@ -4,8 +4,9 @@ import ProjectShort from './ProjectShort';
 import ProjectImg from './ProjectImg';
 import Tags from './Tags';
 
-const ProjectCard = ( { key, 
-                        project } 
+const ProjectCard = ({  key, 
+                        project, 
+                        handleTagDoubleClick} 
                     ) => {
     return (
         <div className='project-card'>
@@ -19,7 +20,9 @@ const ProjectCard = ( { key,
                     <ProjectShort project={project} />
                 </div>
             </div>
-            <div><Tags tags={project.tags} /></div>
+            <div><Tags 
+                tags={project.tags}
+                handleTagDoubleClick={handleTagDoubleClick} /></div>
         </div>
     );
 }

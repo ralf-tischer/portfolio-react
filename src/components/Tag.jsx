@@ -2,7 +2,8 @@ import React, { useState, useRef, useEffect } from 'react';
 const { myTags } = require('../model/data.js');
 
 const Tag = ( {    key, 
-                   tagName: tagName } 
+                   tagName,
+                   handleTagDoubleClick} 
                 ) => {
 
       const [showTooltip, setShowTooltip] = useState(false);
@@ -43,6 +44,12 @@ const Tag = ( {    key,
       };
     }, []);
   
+    const onTagDoubleClick = (tagName) => {
+      handleTagDoubleClick(tagName);
+    };
+
+
+
     const handleMouseEnter = (e) => {
       setShowTooltip(true);
       updateTooltipPosition(e);
@@ -79,7 +86,8 @@ const Tag = ( {    key,
               style= {tagStyle} 
               onMouseEnter={handleMouseEnter} 
               onMouseLeave={handleMouseLeave}
-              onMouseMove={updateTooltipPosition}>
+              onMouseMove={updateTooltipPosition}
+              onDoubleClick={() => onTagDoubleClick(tagName)}>
               {tagName}
             </div>
            {showTooltip && (

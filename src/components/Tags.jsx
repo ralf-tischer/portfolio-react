@@ -1,13 +1,16 @@
-import React, { useState } from 'react';
+import React from 'react';
 import Tag from './Tag';
 
 const Tags = ( {    key, 
-                    tags } 
+                    tags,
+                    handleTagDoubleClick} 
                 ) => {
     return (
         <div className='tag-box'> 
             { tags.map((tagName) => (
-                <Tag tagName={tagName} />
+                <Tag 
+                    tagName={tagName}
+                    handleTagDoubleClick={handleTagDoubleClick} />
             ))}
         </div>
     );
