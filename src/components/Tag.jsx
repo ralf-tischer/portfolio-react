@@ -20,7 +20,12 @@ const Tag = ( {    key,
             color_bg: tagData.color_bg
           };
         } else {
-          return null;
+          return {
+            tag_short: "NOT FOUND",
+            tag_long: "NOT FOUND",
+            color_text: "red",
+            color_bg: "#888"
+          }
         }
       };
 
