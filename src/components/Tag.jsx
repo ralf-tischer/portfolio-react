@@ -1,5 +1,4 @@
-import { logDOM } from '@testing-library/react';
-import React, { useState, useRef, useEffect } from 'react';
+import React from 'react';
 const { myTags } = require('../model/data.js');
 
 const Tag = ( {    key, 
