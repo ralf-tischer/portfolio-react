@@ -69,6 +69,10 @@ html {
 .project-img-box {
     display: flex;
     flex-direction: row;
+    flex-wrap: nowrap;
+}
+
+.project-img-box.landscape {
     flex-wrap: wrap;
 }
 
@@ -79,12 +83,17 @@ html {
 
 .project-img-prview {
     width: calc(100% - 1rem);
+    min-width: 150px;
     object-fit: contain;
     border-style: solid;
     border-radius: 0.5rem;
     border-color: rgb(200, 200, 200);
     padding: 0.5rem;
     transition: all 0.75s ease;
+}
+
+.project-img-landscape {
+    border-color: red;
 }
 
 /******************

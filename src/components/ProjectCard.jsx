@@ -8,12 +8,14 @@ const ProjectCard = ({  key,
                         project, 
                         handleTagDoubleClick} 
                     ) => {
+    const [isLandscape, setIsLandscape] = useState(false);
+
     return (
         <div className='project-card'>
             <ProjectTitle project={project} />
-            <div className='project-img-box'>
+            <div className={isLandscape ? 'project-img-box landscape' : 'project-img-box'}>
                 <div className='project-img-content'>
-                    <ProjectImg project={project} />
+                    <ProjectImg project={project} setIsLandscape={setIsLandscape} />
                 </div>
 
                 <div className='project-img-content'>
