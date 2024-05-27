@@ -1,16 +1,11 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 
-const SwitchColorMode = ( { handleColorModeSwitch } 
-                ) => {
+const SwitchColorMode = () => {
     const [colorModeDark, setColorModeDark] = useState(false);
 
-    useEffect(() => {
-        document.body.style.backgroundColor = colorModeDark ? '#000' : '#fff';
-        document.body.style.color = colorModeDark ? '#fff' : '#000';
-    }, [colorModeDark]);
-    
     const handleSliderChange = () => {
         setColorModeDark(!colorModeDark);
+        document.body.className = !colorModeDark ? 'dark-mode' : '';
     };
     
     return (
