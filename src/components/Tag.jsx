@@ -87,8 +87,8 @@ const Tag = ( {    key,
     return (
         <>
             <div 
-              className='project-button'
-              style= {tagStyle} 
+              className='project-button tag-tag'
+              style={tagStyle} 
               onMouseEnter={handleMouseEnter} 
               onMouseLeave={handleMouseLeave}
               onMouseMove={updateTooltipPosition}

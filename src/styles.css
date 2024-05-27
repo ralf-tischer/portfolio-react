@@ -93,8 +93,13 @@ html {
 .tag-box {
     display: flex;
     justify-content: flex-start;
+    flex-wrap: wrap;
     align-items: baseline;
     font-size: 0.8rem;
+}
+
+.tag-tag {
+    margin: 0.1rem 0rem;
 }
 
 /******************
@@ -135,12 +140,6 @@ html {
 @media screen and (min-width: 800px) {
     .project-card {
         flex-direction: row;
-    }
-    .project-img-box {
-        width: 50%;
-    }
-    .project-title-box {
-        width: 50%;
     }
 }
 
