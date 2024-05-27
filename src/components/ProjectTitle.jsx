@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 
 const ProjectTitle = ( { project } 
                 ) => {
@@ -9,7 +9,7 @@ const ProjectTitle = ( { project }
                     <b>{project.title}</b>
                 </div>
                 <div className='project-title-content'>
-                    <div className='project-button project-button-details'>Details</div>
+                    <div className='project-button project-button-details' title='Click to view project details.'>Details</div>
                 </div>
             </div>
         </>
