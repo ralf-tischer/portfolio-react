@@ -21,7 +21,7 @@ const PROJECTS = [
         title: "Draw Start Player: Gamifying Decision-Making", 
         short: "Interactive web-based tool for board gamers. It runs on mobile devices, using touch detection and visual effects to randomly select a starting player among multiple participants.",
         description: "An essential Catia VBA script responsible for automating the creation and population of file blocks within 2D drawings required a significant update due to a data structure modification.  Instead of applying minor changes, I seized the opportunity to completely refactor the script, leveraging the Model-View-Controller (MVC) architecture. This strategic refactoring unearthed several inefficiencies within the code, enabling me to significantly improve its performance. Furthermore, I introduced new functionalities to accommodate the evolving data structure requirements. While revisiting a more traditional language like VBA presented initial challenges, the project ultimately broadened my programming foundation. I  reinforced valuable problem-solving skills and gained a deeper understanding of how core software design principles can be universally applied, even in environments with limited tooling support.",		
-        img: "dummy.png",
+        img: "start-player-video.gif",
         project_url: "/project"	,
         status: "open",		
         links: {},
