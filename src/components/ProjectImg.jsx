@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react';
 
 const ProjectImg = ({ project, setIsLandscape }) => {
-    const filePath = process.env.PUBLIC_URL + "/assets/img/projects/" + project.img;
+    const filePath = process.env.PUBLIC_URL + "/assets/img/" + project.img;
     const fileType = project.img.split('.').pop();
 
     useEffect(() => {
@@ -15,8 +15,8 @@ const ProjectImg = ({ project, setIsLandscape }) => {
     return (
         <>
             {fileType === "mp4" 
-                ? <video src={filePath} alt={project.title} className="project-img-prview" autoPlay muted></video>
-                : <img src={filePath} alt={project.title} className="project-img-prview"></img>}
+                ? <video src={filePath} alt={project.title} className="project-img-preview" autoPlay muted></video>
+                : <img src={filePath} alt={project.title} className="project-img-preview"></img>}
         </>
     );
 }
