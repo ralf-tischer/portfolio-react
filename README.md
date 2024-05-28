@@ -1,6 +1,18 @@
-# Getting Started with Create React App
+# Portfolio Site 
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Technical Background 
+
+Static website using React.js to render the pages. 
+
+### Endpoints
+
+| Url | Description | Notes |
+|---|---|---|
+| / | Show all projects in overview | |
+| /ids/4,2,1 | Show projects with 4,2,1 in that order in overview | |
+| /tags/python,fun | Show all projects with the tags `python` and `fun` in overview | |
+| /id/3 | Show project with id 3 in project view | |
+
 
 ## Available Scripts
 
@@ -13,6 +25,14 @@ Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
 The page will reload when you make changes.\
 You may also see any lint errors in the console.
+
+### `npm run deploy`
+
+Deploy app to GitHub Pages. 
+
+```bash
+npm deploy -m "Deploy to GitHub Pages" 
+```
 
 ### `npm test`
 
