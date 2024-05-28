@@ -1,6 +1,8 @@
 # Portfolio Site 
 
-## Technical Background 
+`coder-ratz` | Ralf Tischer 2024
+
+## Technical Background
 
 Static website using React.js to render my portfolio. The portfolio is organized in projects. By default, all projects are shown in overview mode. From there a dedicated detail page of each project can be called. 
 
@@ -90,3 +92,7 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+## Author
+
+`coder-ratz` | Ralf Tischer 2024
