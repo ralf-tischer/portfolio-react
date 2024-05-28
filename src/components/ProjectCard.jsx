@@ -5,14 +5,15 @@ import ProjectImg from './ProjectImg';
 import Tags from './Tags';
 
 const ProjectCard = ({  key, 
-                        project, 
+                        project,
+                        handleOpenProjectDetails,
                         handleTagDoubleClick} 
                     ) => {
     const [isLandscape, setIsLandscape] = useState(false);
 
     return (
         <div className='project-card'>
-            <ProjectTitle project={project} />
+            <ProjectTitle project={project} handleOpenProjectDetails={handleOpenProjectDetails} />
             <div className={isLandscape ? 'project-img-box landscape' : 'project-img-box'}>
                 <div className='project-img-content'>
                     <ProjectImg project={project} setIsLandscape={setIsLandscape} />

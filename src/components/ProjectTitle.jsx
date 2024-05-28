@@ -1,7 +1,8 @@
 import React from 'react';
 
-const ProjectTitle = ( { project } 
-                ) => {
+const ProjectTitle = ({ project, 
+                        handleOpenProjectDetails } 
+                        ) => {
     return (
         <>
             <div className='project-title-box'>
@@ -9,7 +10,10 @@ const ProjectTitle = ( { project }
                     <b>{project.title}</b>
                 </div>
                 <div className='project-title-content'>
-                    <div className='project-button project-button-details' title='Click to view project details.'>Details</div>
+                    <div 
+                        className='project-button project-button-details' 
+                        onClick={() => handleOpenProjectDetails(project.id)}
+                        title='Click to view project details.'>Details</div>
                 </div>
             </div>
         </>
