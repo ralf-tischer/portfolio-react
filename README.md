@@ -2,9 +2,11 @@
 
 `coder-ratz` | Ralf Tischer 2024
 
+Static website using React.js to render my portfolio. 
+
 ## Technical Background
 
-Static website using React.js to render my portfolio. The portfolio is organized in projects. By default, all projects are shown in overview mode. From there a dedicated detail page of each project can be called. 
+The portfolio is organized in projects. By default, all projects are shown in overview mode. From there a dedicated detail page of each project can be called. 
 
 Projects have tags as attributes. In the overview, projects can be filtered by tags by clicking on a tag. 
 
