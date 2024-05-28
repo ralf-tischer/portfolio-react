@@ -13,7 +13,7 @@ Projects have tags as attributes. In the overview, projects can be filtered by t
 | Url | Description | Notes |
 |---|---|---|
 | / | Show all projects in overview | |
-| /ids/4,2,1 | Show projects with 4,2,1 in that order in overview | |
+| /ids/4,2,1 | Show projects with the ids 4,2,1 in that order in overview | |
 | /tags/python,fun | Show all projects with the tags `python` and `fun` in overview | |
 | /id/3 | Show project with id 3 in project view | |
 
