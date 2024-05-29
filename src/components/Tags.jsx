@@ -3,14 +3,14 @@ import Tag from './Tag';
 
 const Tags = ( {    key, 
                     tags,
-                    handleTagDoubleClick} 
+                    handleTagClick} 
                 ) => {
     return (
         <div className='tag-box'> 
             { tags.map((tagName) => (
                 <Tag 
                     tagName={tagName}
-                    handleTagDoubleClick={handleTagDoubleClick} />
+                    handleTagClick={handleTagClick} />
             ))}
         </div>
     );

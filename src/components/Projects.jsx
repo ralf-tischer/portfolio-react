@@ -34,7 +34,7 @@ const Projects = () => {
     setFilteredProjects(filtered);
   }, [tags, ids, projects]);
   
-  const handleTagDoubleClick = (tag) => {
+  const handleTagClick = (tag) => {
     // Update the URL
     navigate(`/tags/${tag}`);
   }
@@ -57,7 +57,7 @@ const Projects = () => {
             key={project.id} 
             project={project}
             handleOpenProjectDetails={handleOpenProjectDetails}
-            handleTagDoubleClick={handleTagDoubleClick}
+            handleTagClick={handleTagClick}
           />
         ))}
       </div>

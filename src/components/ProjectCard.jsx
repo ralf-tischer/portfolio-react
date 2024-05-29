@@ -7,7 +7,7 @@ import Tags from './Tags';
 const ProjectCard = ({  key, 
                         project,
                         handleOpenProjectDetails,
-                        handleTagDoubleClick} 
+                        handleTagClick} 
                     ) => {
     const [isLandscape, setIsLandscape] = useState(false);
 
@@ -25,7 +25,7 @@ const ProjectCard = ({  key,
             </div>
             <div><Tags 
                 tags={project.tags}
-                handleTagDoubleClick={handleTagDoubleClick} /></div>
+                handleTagClick={handleTagClick} /></div>
         </div>
     );
 }

@@ -3,7 +3,7 @@ const { myTags } = require('../model/data.js');
 
 const Tag = ( {    key, 
                    tagName,
-                   handleTagDoubleClick} 
+                   handleTagClick} 
                 ) => {
 
       const getTagProperties = (tag_short) => {
@@ -32,8 +32,8 @@ const Tag = ( {    key,
       color: `${tagProps.color_text}`,
     };
 
-    const onTagDoubleClick = (tagName) => {
-      handleTagDoubleClick(tagName);
+    const onTagClick = (tagName) => {
+      handleTagClick(tagName);
     };
 
     return (
@@ -41,8 +41,8 @@ const Tag = ( {    key,
             <div 
               className='project-button tag-tag'
               style={tagStyle} 
-              onDoubleClick={() => onTagDoubleClick(tagName)}
-              title={tagProps.tag_long +  "\nDouble-click to set filter."}
+              onClick={() => onTagClick(tagName)}
+              title={tagProps.tag_long +  "\nClick to set filter."}
               >
               {tagName}
               
