@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
 import ReactHtmlParser from 'react-html-parser';
-import Tags from './Tags';
+import TagsDetailled from './TagsDetailled.jsx';
 
 const { myProjects } = require('../model/data.js');
 
@@ -29,16 +29,13 @@ const ProjectPage = ({ handleTagClick }) => {
 
     return (
         <div className='detail'>
-            <h1>
-                {project.title}
-            </h1>
-            <h2>
-                Summary
-            </h2>
+            <h1>{project.title}</h1>
+            <h2>Summary</h2>
             <p>
                 {project.short}
             </p>
-            <Tags tags={project.tags} />
+            <h2>Tags</h2>
+            <TagsDetailled tags={project.tags} />
             {ReactHtmlParser(projectHtml)}
         </div>
     );

@@ -165,6 +165,15 @@ input:checked + span::before {
 }
 
 /******************
+* Table          
+*******************/
+.table-row-1 {
+    width: 7rem;
+    text-align: right;
+}
+
+
+/******************
 * Button          
 *******************/
 .button {
@@ -180,7 +189,6 @@ input:checked + span::before {
     cursor: default;
     transition: all 0.2s ease-in-out;
     user-select: none; 
-
 }
 
 .button:hover {
