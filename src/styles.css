@@ -91,7 +91,7 @@ body.dark-mode {
 }
 
 .project-img-preview {
-    width: calc(100% - 1rem);
+    width: 100%;
     min-width: 150px;
     object-fit: contain;
     border-style: solid;
@@ -118,6 +118,7 @@ body.dark-mode {
 
 .tag-tag {
     margin: 0.1rem 0rem;
+
 }
 
 /******************
@@ -125,6 +126,9 @@ body.dark-mode {
 *******************/
 .project-button {
     border-radius: 1.5rem;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #ddd;
     padding: 0.25rem 0.5rem;
     display: inline-block;
     margin-right: 0.5rem;
@@ -133,6 +137,7 @@ body.dark-mode {
     cursor: default;
     transition: all 0.2s ease-in-out;
     user-select: none; 
+
 }
 
 .project-button:hover {
@@ -177,12 +182,16 @@ body.dark-mode {
     width: 3rem;            /* w */
     height: 1.5rem;         /* h */
     margin-left: 0.5rem;     
-  }
+}
+
+.switch-label {
+    color: black;
+}
   
 .switch input { 
     /* Hide standard checkbox */
     display: none;
-  }
+}
   
 .switch span {
     /* Grey background */
