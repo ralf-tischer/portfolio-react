@@ -36,6 +36,7 @@ const ProjectPage = ({ handleTagClick }) => {
             </p>
             <h2>Tags</h2>
             <TagsDetailled tags={project.tags} />
+            <h2>Project Details</h2>
             {ReactHtmlParser(projectHtml)}
         </div>
     );
