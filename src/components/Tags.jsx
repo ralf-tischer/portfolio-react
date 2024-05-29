@@ -6,7 +6,7 @@ const Tags = ( {    key,
                     handleTagClick} 
                 ) => {
     return (
-        <div className='tag-box'> 
+        <div className='tag-container'> 
             { tags.map((tagName) => (
                 <Tag 
                     tagName={tagName}

@@ -39,13 +39,12 @@ const Tag = ( {    key,
     return (
         <>
             <div 
-              className='project-button tag-tag'
+              className='tag button'
               style={tagStyle} 
               onClick={() => onTagClick(tagName)}
               title={tagProps.tag_long +  "\nClick to set filter."}
               >
               {tagName}
-              
             </div>
 
 

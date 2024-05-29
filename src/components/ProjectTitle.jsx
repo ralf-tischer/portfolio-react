@@ -5,13 +5,13 @@ const ProjectTitle = ({ project,
                         ) => {
     return (
         <>
-            <div className='project-title-box'>
-                <div className='project-title-content'>
+            <div className='title-container'>
+                <div className='title-content'>
                     <b>{project.title}</b>
                 </div>
-                <div className='project-title-content'>
+                <div className='title-content'>
                     <div 
-                        className='project-button project-button-details' 
+                        className='button button-details' 
                         onClick={() => handleOpenProjectDetails(project.id)}
                         title='Click to view project details.'>Details</div>
                 </div>

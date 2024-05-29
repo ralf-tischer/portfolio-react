@@ -14,7 +14,8 @@ const App = () => {
         <Route path="/tags/:tags" element={<Projects tags={tags} />} />
         <Route path="/ids/:ids" element={<Projects ids={ids} />} />
         <Route path="/id/:id" element={<ProjectPage />} />
-        <Route path="/" element={<Projects />} />    </Routes>
+        <Route path="/" element={<Projects />} />    
+      </Routes>
     </Router>
   )
 }

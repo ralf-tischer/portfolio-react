@@ -14,12 +14,12 @@ const ProjectCard = ({  key,
     return (
         <div className='project-card'>
             <ProjectTitle project={project} handleOpenProjectDetails={handleOpenProjectDetails} />
-            <div className={isLandscape ? 'project-img-box landscape' : 'project-img-box'}>
-                <div className='project-img-content'>
+            <div className={isLandscape ? 'img-box landscape' : 'img-container'}>
+                <div className='img-content'>
                     <ProjectImg project={project} setIsLandscape={setIsLandscape} />
                 </div>
 
-                <div className='project-img-content'>
+                <div className='img-content'>
                     <ProjectShort project={project} />
                 </div>
             </div>
