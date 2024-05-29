@@ -8,17 +8,19 @@ const Projects = () => {
   const [projects] = useState(myProjects);
   const [filteredProjects, setFilteredProjects] = useState(projects);
   const navigate = useNavigate();
-  let { tags, ids } = useParams();
+  const params = useParams();
 
   const handleOpenProjectDetails = (id) => {
     navigate(`/id/${id}`);
   }
 
-  // Convert tags and ids from string to array
-  tags = tags ? tags.split(',') : [];
-  ids = ids ? ids.split(',').map(Number) : [];
-
   useEffect(() => {
+    let { tags, ids } = params;
+
+    // Convert tags and ids from string to array
+    tags = tags ? tags.split(',') : [];
+    ids = ids ? ids.split(',').map(Number) : [];
+
     let filtered = projects;
   
     // Filter by tags
@@ -32,13 +34,12 @@ const Projects = () => {
     }
   
     setFilteredProjects(filtered);
-  }, [tags, ids, projects]);
+  }, [params, projects]);
   
   const handleTagClick = (tag) => {
     // Update the URL
     navigate(`/tags/${tag}`);
   }
-
 
   const handleFilter = (filteredProjects) => {
     setFilteredProjects(filteredProjects);
