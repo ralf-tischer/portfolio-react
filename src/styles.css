@@ -11,8 +11,8 @@ body {
 }
 
 body.dark-mode {
-    background-color: #000;
-    color: #fff;
+    background-color: black;
+    color: white;
 }
 
 .projects {
@@ -26,8 +26,8 @@ body.dark-mode {
     flex-direction: row;
     justify-content: center;
     flex-grow: 1;
-    border-style: solid;
-    border-radius: 1rem;
+    border-radius: 0.5rem;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     margin: 0.25rem;
     padding: 0.5rem;
 }
@@ -124,14 +124,13 @@ input:checked + span::before {
 .image {
     width: 100%;
     object-fit: contain;
-    border-style: solid;
     border-radius: 0.5rem;
-    border-color: rgb(200, 200, 200);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 .image-container .title {
-    font-weight: bold;
-    font-style: normal;
+    font-weight: normal;
+    font-style: italic;
     margin-top: 2rem;
 }
 
@@ -154,7 +153,7 @@ input:checked + span::before {
 *******************/
 .tag-container {
     display: flex;
-    justify-content: flex-start;
+    justify-content: center;
     flex-wrap: wrap;
     align-items: baseline;
     font-size: 0.8rem;
@@ -171,7 +170,6 @@ input:checked + span::before {
     width: 7rem;
     text-align: right;
 }
-
 
 /******************
 * Button          
@@ -208,10 +206,7 @@ input:checked + span::before {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    align-items: baseline;
-    background-color: rgb(225, 225, 225);
-    color: black;
-    border-radius: 0.5rem;
+    align-items: center;
 }
 
 .title-content {
@@ -236,7 +231,6 @@ input:checked + span::before {
 
 .project-card .thumbnail {
     min-width: 150px;
-    padding: 0.5rem;
     transition: all 0.75s ease;
 }
 
