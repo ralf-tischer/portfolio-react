@@ -77,7 +77,7 @@ const TAGS = [
     { tag_short: "api", tag_long: "Application Programming Interface to allow communication between two applications.", color_text: "white", color_bg: "#222" },
     { tag_short: "business tool", tag_long: "For professional business use.", color_text: "black", color_bg: "#aaa" },
     { tag_short: "cad", tag_long: "Computer Aided Design.", color_text: "black", color_bg: "#aaa" },
-    { tag_short: "fun", tag_long: "For persoanl use and fun.", color_text: "black", color_bg: "#aaa" },
+    { tag_short: "fun", tag_long: "For personal use and fun.", color_text: "black", color_bg: "#aaa" },
     { tag_short: "frontend", tag_long: "Graphical user interface of an application.", color_text: "white", color_bg: "#888" },
     { tag_short: "backend", tag_long: "Server-side software part of an application.", color_text: "white", color_bg: "#888" },
     { tag_short: "refactoring", tag_long: "Restructuring code, while not changing its original functionality.", color_text: "white", color_bg: "#888" },
