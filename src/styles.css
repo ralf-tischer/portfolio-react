@@ -28,7 +28,7 @@ body.dark-mode {
     flex-grow: 1;
     border-radius: 0.5rem;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    margin: 0.25rem;
+    margin: 0.5rem 0.5rem;
     padding: 0.5rem;
 }
 
@@ -237,10 +237,25 @@ input:checked + span::before {
 /******************
 * Media Queries          
 *******************/
-@media screen and (min-width: 550px) {
+@media screen and (min-width: 790px) {
     html {
         font-size: 16px;
     }
+
+    .projects {
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: space-between;
+        width: 100%;
+    }
+
+    .project-card {
+        flex: 0 1 calc(50% - 1rem); /* Each card will take up roughly half the width of the container, minus 1rem for some spacing */
+        box-sizing: border-box; /* Include padding and border in element's total width and height */
+        margin: 0.5rem; /* Add some margin to create space between cards */
+    }
+
+    
 }
 
 @media screen and (min-width: 800px) {
