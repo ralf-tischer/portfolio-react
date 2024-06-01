@@ -16,12 +16,12 @@ const Filter = ({ projects, onFilter }) => {
     let filteredProjects = projects;
 
     if (filterType === 'tags') {
-      const tagFilters = filterValue.split(',').map((tag) => tag.trim());
+      const tagFilters = filterValue.toLowerCase().split(',').map((tag) => tag.trim());
       filteredProjects = projects.filter((project) =>
         tagFilters.every((tag) => project.tags.includes(tag))
       );
     } else if (filterType === 'id') {
-      const idFilters = filterValue.split(',').map((id) => parseInt(id.trim()));
+      const idFilters = filterValue.toLowerCase().split(',').map((id) => parseInt(id.trim()));
       const projectsMap = projects.reduce((acc, project) => {
         acc[project.id] = project;
         return acc;
