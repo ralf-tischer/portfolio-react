@@ -75,7 +75,7 @@ const TAGS = [
     { tag_short: "react", tag_long: "Javascript library for web and native user interfaces.", color_text: "white", color_bg: "#222" },
     { tag_short: "sql", tag_long: "Structured Query Language for database creation and manipulation.", color_text: "white", color_bg: "#222" },
     { tag_short: "api", tag_long: "Application Programming Interface to allow communication between two applications.", color_text: "white", color_bg: "#222" },
-    { tag_short: "office tool", tag_long: "For professional use.", color_text: "black", color_bg: "#aaa" },
+    { tag_short: "office", tag_long: "For professional use.", color_text: "black", color_bg: "#aaa" },
     { tag_short: "cad", tag_long: "Computer Aided Design.", color_text: "black", color_bg: "#aaa" },
     { tag_short: "fun", tag_long: "For personal use and fun.", color_text: "black", color_bg: "#aaa" },
     { tag_short: "frontend", tag_long: "Graphical user interface of an application.", color_text: "white", color_bg: "#888" },
