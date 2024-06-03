@@ -7,12 +7,15 @@ const Links = ( { links }
     console.log("links", links);
 
     return (
-        <div className='link-container'> 
+        <div className='link-container'>
+            <table> 
             { links.map((link) => (
-                <Link 
+                
+                <tr><Link 
                     link={link}
-                />
+                /></tr>
             ))}
+            </table>
         </div>
     );
 }

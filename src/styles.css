@@ -174,8 +174,17 @@ input:checked + span::before {
 /******************
 * Link          
 *******************/
+.link-container {
+    display: block;
+    align-items: center;
+}
+
+.logo {
+    margin: 1rem;
+}
+
 .link {
-    margin: 2rem;
+    margin: 0rem;
 }
 
 
