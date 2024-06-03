@@ -1,6 +1,6 @@
 # Portfolio Site 
 
-`coder-ratz` | Ralf Tischer 2024
+| Ralf Tischer 2024
 
 Static website using React.js to render my portfolio. 
 
@@ -97,4 +97,4 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/t
 
 ## Author
 
-`coder-ratz` | Ralf Tischer 2024
+| Ralf Tischer 2024
