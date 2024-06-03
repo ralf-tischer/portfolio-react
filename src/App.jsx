@@ -4,8 +4,8 @@ import Navbar from './components/Navbar.jsx';
 import Projects from './components/Projects.jsx';
 import ProjectPage from './components/ProjectPage.jsx';
 
-//const baseUrl = "/portfolio-react";
-const baseUrl = "/";
+const baseUrl = "/portfolio-react";
+//const baseUrl = "/";
 
 const App = () => {
   let { tags, ids } = useParams();
