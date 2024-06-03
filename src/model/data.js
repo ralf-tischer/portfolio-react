@@ -25,7 +25,7 @@ const PROJECTS = [
         project_url: "/project"	,
         status: "open",		
         links: [{"type": "GitHub", "url": "https://github.com/coder-ratz/bgt"}, 
-                {"type": "Demo", "url": "https://coder-ratz.github.io/bgt/"}],
+                {"type": "Demo (needs touchscreen)", "url": "https://coder-ratz.github.io/bgt/module1.html"}],
         tags: ["html", "javascript", "frontend", "fun"] },
     {   id: 4, 
         title: "Catia VBA Refactoring: Breathing New Life into Legacy Code", 
