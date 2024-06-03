@@ -4,11 +4,14 @@ import Navbar from './components/Navbar.jsx';
 import Projects from './components/Projects.jsx';
 import ProjectPage from './components/ProjectPage.jsx';
 
+//const baseUrl = "/portfolio-react";
+const baseUrl = "/";
+
 const App = () => {
   let { tags, ids } = useParams();
 
   return (
-    <Router basename="/portfolio-react">
+    <Router basename={baseUrl}>
       <Navbar />
       <Routes>
         <Route path="/tags/:tags" element={<Projects tags={tags} />} />

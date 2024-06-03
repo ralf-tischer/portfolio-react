@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
 import ReactHtmlParser from 'react-html-parser';
+import Links from './Links.jsx';
 import TagsDetailled from './TagsDetailled.jsx';
 
 const { myProjects } = require('../model/data.js');
@@ -34,6 +35,8 @@ const ProjectPage = ({ handleTagClick }) => {
             <p>
                 {project.short}
             </p>
+            <h2>Links</h2>
+                <Links links={project.links} />
             <h2>Tags</h2>
             <TagsDetailled tags={project.tags} />
             <h2>Project Details</h2>
