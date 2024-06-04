@@ -175,8 +175,8 @@ input:checked + span::before {
 * Link          
 *******************/
 .link-container {
-    display: block;
     align-items: center;
+    width: 100%;
 }
 
 .logo {

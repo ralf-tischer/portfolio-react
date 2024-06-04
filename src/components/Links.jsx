@@ -10,10 +10,9 @@ const Links = ( { links }
         <div className='link-container'>
             <table> 
             { links.map((link) => (
-                
-                <tr><Link 
+                <Link 
                     link={link}
-                /></tr>
+                />
             ))}
             </table>
         </div>
