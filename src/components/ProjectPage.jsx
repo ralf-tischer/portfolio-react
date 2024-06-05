@@ -3,6 +3,7 @@ import { useParams } from 'react-router-dom';
 import ReactHtmlParser from 'react-html-parser';
 import Links from './Links.jsx';
 import Tags from './Tags.jsx';
+import ProjectNavigation from './ProjectNavigation.jsx';
 
 const { myProjects } = require('../model/data.js');
 
@@ -34,19 +35,26 @@ const ProjectPage = ({ handleTagClick }) => {
     return (
         <div className='detail'>
             <h1>{project.title}</h1>
+
             <h2>Summary</h2>
             <p>
                 {project.short}
             </p>
+
             { project && project.links && project.links.length > 0 &&   
             <>
                 <h2>Links</h2>
                 <Links links={project.links} />
             </> }
+
             <h2>Tags</h2>
-            <Tags tags={project.tags} />
+            <Tags tags={project.tags} handleTagClick={handleTagClick}/>
+
             <h2>Project Details</h2>
             {ReactHtmlParser(projectHtml)}
+
+            <h2>Navigate through Projects</h2>
+            <ProjectNavigation project={project} />
         </div>
     );
 };

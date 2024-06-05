@@ -10,13 +10,17 @@ const baseUrl = "/portfolio-react";
 const App = () => {
   let { tags, ids } = useParams();
 
+  const handleTagClick = (tag) => {
+    console.log("Tagging not from here!");
+  }
+
   return (
     <Router basename={baseUrl}>
       <Navbar />
       <Routes>
         <Route path="/tags/:tags" element={<Projects tags={tags} />} />
         <Route path="/ids/:ids" element={<Projects ids={ids} />} />
-        <Route path="/id/:id" element={<ProjectPage />} />
+        <Route path="/id/:id" element={<ProjectPage handleTagClick={handleTagClick} />} />
         <Route path="/" element={<Projects />} />    
       </Routes>
     </Router>

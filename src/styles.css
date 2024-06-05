@@ -33,10 +33,15 @@ body.dark-mode {
 }
 
 .detail {
-    h1, h2 {
-        text-align: center;
-    }
+    text-align: justify;
 }
+
+.detail h1, 
+.detail h2,
+.detail h3 {
+    text-align: center;
+}
+
 
 /******************
 * Navbar          
