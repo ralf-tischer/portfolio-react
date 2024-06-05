@@ -1,4 +1,26 @@
 /******************
+* Navbar          
+*******************/
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(224, 224, 224);
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+}
+
+.navbar-left {
+    display: flex;
+    align-items: center;
+}
+
+.navbar-right {
+    display: flex;
+    align-items: center;
+}
+
+/******************
 * General          
 *******************/
 html {
@@ -42,27 +64,8 @@ body.dark-mode {
     text-align: center;
 }
 
-
-/******************
-* Navbar          
-*******************/
-.navbar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: rgb(224, 224, 224);
-    padding: 0.5rem;
-    border-radius: 0.5rem;
-}
-
-.navbar-left {
-    display: flex;
-    align-items: center;
-}
-
-.navbar-right {
-    display: flex;
-    align-items: center;
+.detail .navbar {
+    margin-top: 3rem;
 }
 
 /******************
