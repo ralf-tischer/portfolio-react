@@ -52,8 +52,9 @@ const ProjectPage = ({ handleTagClick }) => {
 
             <h2>Project Details</h2>
             {ReactHtmlParser(projectHtml)}
+            
+            <p> </p>
 
-            <h2>Navigate through Projects</h2>
             <ProjectNavigation project={project} />
         </div>
     );
