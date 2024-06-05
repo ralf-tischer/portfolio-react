@@ -1,5 +1,6 @@
 import React from 'react';
 import TagDetailled from './TagDetailled';
+import Tag from './Tag';
 
 const TagsDetailled = ( {    key, 
                     tags,
@@ -11,7 +12,7 @@ const TagsDetailled = ( {    key,
             <tbody>
             { tags.map((tagName) => (
                 <tr>
-                    <TagDetailled 
+                    <Tag
                         tagName={tagName}
                         handleTagClick={handleTagClick} />
                 </tr>

@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
 import ReactHtmlParser from 'react-html-parser';
 import Links from './Links.jsx';
-import TagsDetailled from './TagsDetailled.jsx';
+import Tags from './Tags.jsx';
 
 const { myProjects } = require('../model/data.js');
 
@@ -31,7 +31,6 @@ const ProjectPage = ({ handleTagClick }) => {
         loadProjectPage();
     }, [id, project]);
 
-
     return (
         <div className='detail'>
             <h1>{project.title}</h1>
@@ -39,10 +38,13 @@ const ProjectPage = ({ handleTagClick }) => {
             <p>
                 {project.short}
             </p>
-            <h2>Links</h2>
+            { project && project.links && project.links.length > 0 &&   
+            <>
+                <h2>Links</h2>
                 <Links links={project.links} />
+            </> }
             <h2>Tags</h2>
-            <TagsDetailled tags={project.tags} />
+            <Tags tags={project.tags} />
             <h2>Project Details</h2>
             {ReactHtmlParser(projectHtml)}
         </div>
