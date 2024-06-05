@@ -8,12 +8,18 @@ const { myProjects } = require('../model/data.js');
 
 const ProjectPage = ({ handleTagClick }) => {
     let { id } = useParams();
+    //Get project with project.id = id from myProjects
+    const project = myProjects.find(project => project.id === parseInt(id));
+
+
     const [projectHtml, setProjectHtml] = useState('');
 
     useEffect(() => {
+        console.log("project_url: ", project.project_url);
         const loadProjectPage = async () => {
             try {
-                const response = await fetch(`/portfolio-react/assets/projects/Project_${id}/ProjectPage_${id}.html`);
+                //const response = await fetch(`/portfolio-react/assets/projects/Project_${id}/ProjectPage_${id}.html`);
+                const response = await fetch('/portfolio-react/assets/' + project.project_url);
                 const data = await response.text();
                 setProjectHtml(data);
             } catch (error) {
@@ -23,10 +29,8 @@ const ProjectPage = ({ handleTagClick }) => {
             }
         };
         loadProjectPage();
-    }, [id]);
+    }, [id, project]);
 
-    //Get project with project.id = id from myProjects
-    const project = myProjects.find(project => project.id === parseInt(id));
 
     return (
         <div className='detail'>
