@@ -17,7 +17,7 @@ const PROJECTS = [
     
     {   id: 3, 
         title: "SharePoint Intranet: Building a Collaborative Hub", 
-        short: "Led a self-organized team to design and implement a user-friendly intranet using Microsoft SharePoint. The platform streamlined information sharing, boosted user engagement, and earned a near-perfect rating in a user poll.",
+        short: "Led a self-organized team to design and implement a local intranet site with Microsoft SharePoint, achieving high user satisfaction and ongoing engagement.",
         img: "intranet-thumbnail.png",
         project_url: "/projects/intranet/intranet.html"	,
         links: [],
@@ -35,9 +35,9 @@ const PROJECTS = [
         
     {   id: 5, 
         title: "Catia VBA Refactoring: Breathing New Life into Legacy Code", 
-        short: "Successfully refactored a critical Catia VBA script using an MVC architecture to enhance performance and adapt to data structure changes.",
-        img: "catia-thumbmail.png",
-        project_url: "/project"	,
+        short: "Successfully refactored a Catia VBA script using MVC architecture, improving performance and adding new functions to adapt to updated data structures.",
+        img: "catia-thumbnail.png",
+        project_url: "/projects/catia/catia.html"	,
         links: [],
         tags: ["vba", "cad", "backend", "frontend", "refactoring", "office"] },
 
