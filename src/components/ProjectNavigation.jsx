@@ -15,7 +15,7 @@ const ProjectNavigation = ({ project, minId, maxId }) => {
     console.log("project.id, minId, maxId: ", project.id, minId, maxId);
     
     return (
-        <div className='navbar'>
+        <div className={ project.id > minId ? 'navbar' : 'navbar align-right' }>
             { project.id > minId &&  
             <div 
                 className='button button-details' 
@@ -27,7 +27,7 @@ const ProjectNavigation = ({ project, minId, maxId }) => {
 
             { project.id < maxId &&
             <div 
-                className='button button-details' 
+                className='button button-details'
                 onClick={() => handleNavigateToProject(+1)}
                 title='Click to navigate to next project.'>
                     Next Project
