@@ -15,7 +15,7 @@ const Navbar = () => {
                 className='button button-details' 
                 onClick={handleNavigateHome}
                 >
-                    Home
+                    Projects
             </div>
             <div 
                 className='button button-details' 

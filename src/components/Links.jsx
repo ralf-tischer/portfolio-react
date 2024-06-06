@@ -1,20 +1,14 @@
 import React from 'react';
 import Link from './Link';
 
-const Links = ( { links } 
-                ) => {
-
-    console.log("links", links);
-
+const Links = ({ links }) => {
     return (
-        <div className='link-container'>
-            <table> 
+        <div className='links-container'>
             { links.map((link) => (
                 <Link 
                     link={link}
                 />
             ))}
-            </table>
         </div>
     );
 }

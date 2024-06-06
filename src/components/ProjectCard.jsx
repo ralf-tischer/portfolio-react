@@ -12,7 +12,7 @@ const ProjectCard = ({  key,
     const [isLandscape, setIsLandscape] = useState(false);
 
     return (
-        <div className='project-card'>
+        <div className='project-card' onDoubleClick={() => handleOpenProjectDetails(project.id)}>
             <ProjectTitle project={project} handleOpenProjectDetails={handleOpenProjectDetails} />
             <div className={isLandscape ? 'img-box landscape' : 'img-container'}>
                 <div className='img-content'>

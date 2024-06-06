@@ -6,18 +6,16 @@ const linkFilepath = '../assets/img/logos/';
 const Link = ({ link }) => {
     return (
         <div className='logo-container'>
-            <tr>
+            <div>
                 <a href={link.url} target="_blank" rel="noopener noreferrer" className='link'>
-                    <td width="30%">
-                        { link.type === "youtube" && <img className='logo' width='80px' src= {linkFilepath + 'yt_logo_rgb_dark.png'} alt="YouTube" />}
-                        { link.type === "github" && <img className='logo' width='30px' src={linkFilepath + 'github-mark-white.png'} alt="GitHub" />}
-                        { link.type === "linkedin" && <img className='logo' width='30px' src= {linkFilepath + 'LI-In-Bug.png'} alt="LinkedIn" />}
-                    </td>
-                    <td>
+                    <div width="30%">
+                        { link.type !== "" && <img className='logo' width='60px' src= {linkFilepath + link.type + ".png"} alt="LinkedIn" />}
+                    </div>
+                    <div>
                         {link.title}
-                    </td>
+                    </div>
                 </a>
-            </tr>
+            </div>
         </div>
     );
 }
