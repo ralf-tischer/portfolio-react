@@ -1,8 +1,8 @@
 import React from 'react';
 import Tag from './Tag';
 
-const Tags = ( {    key, 
-                    tags,
+const Tags = ( {    tags,
+                    clickable,
                     handleTagClick} 
                 ) => {
     return (
@@ -10,6 +10,7 @@ const Tags = ( {    key,
             { tags.map((tagName) => (
                 <Tag 
                     tagName={tagName}
+                    clickable={clickable}
                     handleTagClick={handleTagClick} />
             ))}
         </div>

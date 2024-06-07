@@ -1,8 +1,8 @@
 import React from 'react';
 const { myTags } = require('../model/data.js');
 
-const Tag = ( {    key, 
-                   tagName,
+const Tag = ( {    tagName,
+                   clickable,
                    handleTagClick} 
                 ) => {
 
@@ -33,22 +33,20 @@ const Tag = ( {    key,
     };
 
     const onTagClick = (tagName) => {
-      handleTagClick(tagName);
+      if (clickable) {
+        handleTagClick(tagName);
+      }
     };
 
     return (
-        <>
-            <div 
-              className='tag button'
-              style={tagStyle} 
-              onClick={() => onTagClick(tagName)}
-              title={tagProps.tag_long +  "\nClick to set filter."}
-              >
-              {tagName}
-            </div>
-
-
-        </>
+      <div 
+        className='tag button'
+        style={tagStyle} 
+        onClick={() => onTagClick(tagName)}
+        title={tagProps.tag_long + (clickable === true ? "\nClick to set filter." : "")}
+        >
+        {tagName}
+      </div>
     );
 }
 
