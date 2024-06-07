@@ -94,7 +94,7 @@ const TAGS = [
 const CONTACT = [
         {"title": "LinkedIn", "type": "linkedin", "url": "https://www.linkedin.com/in/ralftischer/"},
         {"title": "GitHub repository", "type": "github", "url": "https://github.com/ralf-tischer/"}, 
-        {"title": "Email", "type": "email", "url": "mailto:ralf.tischer.1969@gmailcom"}
+        {"title": "Email", "type": "email", "url": "mailto:ralf.tischer.1969@gmail.com"}
 ];
 
 exports.myProjects = PROJECTS;
