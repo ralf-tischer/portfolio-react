@@ -90,8 +90,16 @@ const TAGS = [
     { tag_short: "agile", tag_long: "Mindset to breaks projects down into dynamic phases.", color_text: "black", color_bg: "#ddd" }
 ]
 
+
+const CONTACT = [
+        {"title": "LinkedIn", "type": "linkedin", "url": "https://www.linkedin.com/in/ralftischer/"},
+        {"title": "GitHub repository", "type": "github", "url": "https://github.com/ralf-tischer/"}, 
+        {"title": "Email", "type": "email", "url": "mailto:ralf.tischer.1969@gmailcom"}
+];
+
 exports.myProjects = PROJECTS;
 exports.myTags = TAGS;
+exports.myContact = CONTACT;
 
 /*
 export const getTagProperties = (tag_short) => {
