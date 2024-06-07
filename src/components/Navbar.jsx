@@ -5,22 +5,25 @@ import SwitchColorMode from './SwitchColorMode';
 const Navbar = () => {
     const navigate = useNavigate();
 
-    const handleNavigateHome = () => {
-        navigate(`/`);
+    const handleNavigate = ( path ) => {
+        navigate(path);
     };
     
     return (
         <div className='navbar'>
             <div 
                 className='button button-details' 
-                onClick={handleNavigateHome}
+                title='Show contact details.'
+                onClick={() => handleNavigate('/')}
                 >
-                    Projects
+                Projects
             </div>
             <div 
                 className='button button-details' 
-                title='Click for contact details.'>
-                    Contact
+                title='Show contact details.'
+                onClick={() => handleNavigate('/contact/')}
+                >
+                Contact
             </div>
             <div className='navbar-right'>
                 <SwitchColorMode />
