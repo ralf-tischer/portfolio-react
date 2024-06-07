@@ -1,4 +1,4 @@
-import { HashRouter as Router, Route, Routes } from 'react-router-dom'; // was BrowserRouter
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom'; // was BrowserRouter
 import { useParams } from 'react-router-dom';
 import Navbar from './components/Navbar.jsx';
 import Projects from './components/Projects.jsx';
