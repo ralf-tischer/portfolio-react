@@ -25,6 +25,7 @@ const ProjectCard = ({  key,
             </div>
             <div><Tags 
                 tags={project.tags}
+                clickable={true}
                 handleTagClick={handleTagClick} /></div>
         </div>
     );
