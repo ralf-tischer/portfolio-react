@@ -15,7 +15,6 @@ const ProjectPage = ({ handleTagClick }) => {
     const project = myProjects.find(project => project.id === parseInt(id));
 
     const getMinMaxId = () => {
-        console.log("myProjects: ", myProjects);
         let minId = myProjects[0].id;
         let maxId = myProjects[0].id;
     
@@ -27,15 +26,12 @@ const ProjectPage = ({ handleTagClick }) => {
                 maxId = project.id;
             }
         });
-    
-        console.log("minId, maxId: ", minId, maxId);
         return { minId, maxId };
     };
 
     useEffect(() => {
         const loadProjectPage = async () => {
             try {
-                //const response = await fetch(`/portfolio-react/assets/projects/Project_${id}/ProjectPage_${id}.html`);
                 const response = await fetch('/portfolio-react/assets/' + project.project_url);
                 const data = await response.text();
                 setProjectHtml(data);
@@ -62,16 +58,25 @@ const ProjectPage = ({ handleTagClick }) => {
             { project && project.links && project.links.length > 0 &&   
             <>
                 <h2>Links</h2>
-                <Links links={project.links} />
+                <Links 
+                    links={project.links} />
             </> }
 
             <h2>Tags</h2>
-            <Tags tags={project.tags} handleTagClick={handleTagClick}/>
+            <Tags 
+                tags={project.tags} 
+                clickable={false}
+                handleTagClick={handleTagClick}
+            />
 
             <h2>Project Details</h2>
             {ReactHtmlParser(projectHtml)}
 
-            <ProjectNavigation project={project} minId={minId} maxId={maxId} />
+            <ProjectNavigation 
+                project={project} 
+                minId={minId} 
+                maxId={maxId} 
+            />
         </div>
     );
 };
