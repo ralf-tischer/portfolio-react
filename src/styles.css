@@ -67,9 +67,9 @@ body.dark-mode {
     text-align: justify;
 }
 
-.detail h1, 
-.detail h2,
-.detail h3 {
+h1, 
+h2,
+h3 {
     text-align: center;
 }
 
@@ -170,7 +170,6 @@ input:checked + span::before {
 
 .image-container .source::after{
     content: "]";
-    
 }
 
 /******************
@@ -226,8 +225,6 @@ input:checked + span::before {
 .link {
     margin: 0rem;
 }
-
-
 
 /******************
 * Button          

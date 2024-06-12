@@ -13,11 +13,20 @@ const Navbar = () => {
         <div className='navbar'>
             <div 
                 className='button button-details' 
+                title='Show Introduction.'
+                onClick={() => handleNavigate('/introduction/')}
+                >
+                Introduction
+            </div>
+            
+            <div 
+                className='button button-details' 
                 title='Show contact details.'
-                onClick={() => handleNavigate('/')}
+                onClick={() => handleNavigate('/projects')}
                 >
                 Projects
             </div>
+
             <div 
                 className='button button-details' 
                 title='Show contact details.'

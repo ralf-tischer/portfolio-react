@@ -4,6 +4,7 @@ import Navbar from './components/Navbar.jsx';
 import Projects from './components/Projects.jsx';
 import ProjectPage from './components/ProjectPage.jsx';
 import Contact from './components/Contact.jsx';
+import Introduction from './components/Introduction.jsx';
 
 const baseUrl = "/portfolio-react";
 //const baseUrl = "/";
@@ -24,7 +25,9 @@ const App = () => {
           <Route path="/ids/:ids" element={<Projects ids={ids} />} />
           <Route path="/id/:id" element={<ProjectPage handleTagClick={handleTagClick} />}  />
           <Route path="/contact/" element={<Contact />} />
-          <Route path="/" element={<Projects />} />    
+          <Route path="/introduction/" element={<Introduction />} />
+          <Route path="/projects/" element={<Projects />} /> 
+          <Route path="/" element={<Introduction />} />    
         </Routes>
       </div>
     </Router>
