@@ -18,6 +18,7 @@ Projects have tags as attributes. In the overview, projects can be filtered by t
 | /ids/4,2,1 | Show projects with the ids 4,2,1 in that order in overview | |
 | /tags/python,fun | Show all projects with the tags `python` and `fun` in overview | |
 | /id/3 | Show project with id 3 in project view | |
+| /contact/ | Open contact page | |
 
 
 ## Available Scripts
