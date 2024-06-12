@@ -9,7 +9,7 @@ const Link = ({ link }) => {
             <div>
                 <a href={link.url} target="_blank" rel="noopener noreferrer" className='link'>
                     <div width="30%">
-                        { link.type !== "" && <img className='logo' width='60px' src= {linkFilepath + link.type + ".png"} alt="LinkedIn" />}
+                        { link.type !== "" && <img className='logo' width='60px' src= {linkFilepath + link.type + ".png"} alt={link.type} />}
                     </div>
                     <div>
                         {link.title}
