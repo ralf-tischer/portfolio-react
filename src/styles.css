@@ -63,6 +63,25 @@ body.dark-mode {
     padding: 0.5rem;
 }
 
+.project-card.mission {
+    display: flex;
+    text-align: left;
+    align-items: center;
+}
+
+.mission .content {
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+
+.mission.nowrap{
+    flex-direction: column;
+}
+
+.nowrap .content {
+    margin-bottom: 1rem;
+}
+
 .detail {
     text-align: justify;
 }
@@ -170,6 +189,13 @@ input:checked + span::before {
 
 .image-container .source::after{
     content: "]";
+}
+
+.image.profile {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+
 }
 
 /******************
