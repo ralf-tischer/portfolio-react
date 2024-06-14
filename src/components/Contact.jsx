@@ -6,12 +6,14 @@ const { myContact } = require('../model/data.js');
 const Contact = () => {
 
     return (
-        <div className='detail'>
+        <>
             <h1>Contact</h1>
+            <div className='project-card detail'>
 
-            <h2>Ralf Tischer</h2>
-            <Links links={myContact} />
-        </div>
+                <h2>Ralf Tischer</h2>
+                <Links links={myContact} />
+            </div>
+        </>
     );
 };
 

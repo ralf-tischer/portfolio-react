@@ -69,6 +69,10 @@ body.dark-mode {
     align-items: center;
 }
 
+.project-card.mission.no-border {
+    box-shadow: none;
+}
+
 .mission .content {
     margin-left: 1rem;
     margin-right: 1rem;
@@ -192,8 +196,8 @@ input:checked + span::before {
 }
 
 .image.profile {
-    width: 80px;
-    height: 80px;
+    width: 60px;
+    height: 60px;
     border-radius: 50%;
 
 }
