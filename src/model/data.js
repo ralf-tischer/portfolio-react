@@ -45,7 +45,7 @@ const PROJECTS = [
         title: "MeisterTask Automation: Streamlining Task Management with Python", 
         short: "Python script leveraging the MeisterTask API to automate task creation from absence data in Excel. The script later evolved to handle data import and export between MeisterTask and various formats.",
         img: "meistertask-thumbnail.png",
-        project_url: "/project"	,
+        project_url: "/projects/meistertask/meistertask.html"	,
         links: [],
         tags: ["python", "api", "backend", "office"] },
 
