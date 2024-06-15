@@ -50,11 +50,11 @@ const PROJECTS = [
         tags: ["python", "api", "backend", "office"] },
 
     {   id: 7, 
-        title: "Coding Cookbook: Building Your Personal Programming Knowledge Base", 
-        short: "Developed a personal `Coding Cookbook` to document and organize learnings throughout my programming journey. This project evolved from a simple Google Doc to a structured Markdown file and ultimately a collaborative hub on GitHub.",
-        img: "dummy.png",
-        project_url: "/project"	,
-        links: [],
+        title: "Coding Cookbook: My Personal Programming Knowledge Base", 
+        short: "Created a comprehensive coding cookbook repository on GitHub to document and organize coding learnings and shortcuts.",
+        img: "cookbook-thumbnail.png",
+        project_url: "/projects/cookbook/cookbook.html"	,
+        links: [{"title": "GitHub repository", "type": "github", "url": "https://github.com/ralf-tischer/coding-cookbook"}],
         tags: ["markdown", "office", "fun"] },
 
     {   id: 8, 

@@ -23,7 +23,8 @@ const Introduction = () => {
                         <img className="image profile" width="50px" src="/portfolio-react/assets/img/profile.jpg" alt="My profile in ACSII art" />
                     </div>
                     <div className='content'>
-                        I am an engineering team leader embracing diversity and interdiscidivinary. I solve complex problems using engineering skills, processes, team development or software.
+                        I am a mechanical engineer leading teams and managing projects. 
+                        I solve complex problems by mechanical engineering, processes or team development and software engineering.
                     </div>
                 </div>
             </div>

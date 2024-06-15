@@ -6,8 +6,8 @@ import ProjectPage from './components/ProjectPage.jsx';
 import Contact from './components/Contact.jsx';
 import Introduction from './components/Introduction.jsx';
 
-//const baseUrl = "/portfolio-react";
-const baseUrl = "/";
+const baseUrl = "/portfolio-react";
+//const baseUrl = "/";
 
 const App = () => {
   let { tags, ids } = useParams();

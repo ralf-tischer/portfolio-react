@@ -55,13 +55,6 @@ const ProjectPage = ({ handleTagClick }) => {
                 {project.short}
             </p>
 
-            { project && project.links && project.links.length > 0 &&   
-            <>
-                <h2>Links</h2>
-                <Links 
-                    links={project.links} />
-            </> }
-
             <h2>Tags</h2>
             <Tags 
                 tags={project.tags} 
@@ -71,6 +64,15 @@ const ProjectPage = ({ handleTagClick }) => {
 
             <h2>Project Details</h2>
             {ReactHtmlParser(projectHtml)}
+
+            { project && project.links && project.links.length > 0 &&   
+            <>
+                <h2>Links</h2>
+                <Links 
+                    links={project.links} />
+            </> }
+
+
 
             <ProjectNavigation 
                 project={project} 
