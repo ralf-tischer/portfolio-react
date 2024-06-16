@@ -1,71 +1,116 @@
 const PROJECTS = [
-    {   id: 1, 
-        title: "Engineering Team Lead: Developing Railway Components", 
+    {
+        id: 1,
+        title: "Engineering Team Lead: Developing Railway Components",
         short: "Led an engineering team for over twenty years, optimizing processes and developing complex mechanical components for major railway projects.",
         img: "mech-eng-thumbnail.jpg",
-        project_url: "/projects/mech-eng/mech-eng.html"	,
+        project_url: "/projects/mech-eng/mech-eng.html",
         links: [],
-        tags: ["mech eng", "team lead", "project mgmt", "agile", "railway"] },
+        tags: ["mech eng", "team lead", "project mgmt", "agile", "railway"]
+    },
 
-    {   id: 2, 
-        title: "BOM Navigator: Simplifying Bill of Materials Management", 
+    {
+        id: 2,
+        title: "BOM Navigator: Simplifying Bill of Materials Management",
         short: "Python-based web application to simplify navigating and extracting data from complex bill of materials (BOMs). It automates data retrieval from an ERP system, allowing users to browse BOM structures and integrate historical sales data for informed decision-making.",
         img: "bom-nav-thumbmail.png",
-        project_url: "/projects/bom-nav/bom-nav.html"	,
+        project_url: "/projects/bom-nav/bom-nav.html",
         links: [],
-        tags: ["python", "flask", "sql", "html", "javascript", "backend", "frontend", "api", "mech eng", "railway"] },
-    
-    {   id: 3, 
-        title: "SharePoint Intranet: Building a Collaborative Hub", 
+        tags: ["python", "flask", "sql", "html", "javascript", "backend", "frontend", "api", "mech eng", "railway"]
+    },
+
+    {
+        id: 3,
+        title: "SharePoint Intranet: Building a Collaborative Hub",
         short: "Led a self-organized team to design and implement a local intranet site with Microsoft SharePoint, achieving high user satisfaction and ongoing engagement.",
         img: "intranet-thumbnail.png",
-        project_url: "/projects/intranet/intranet.html"	,
+        project_url: "/projects/intranet/intranet.html",
         links: [],
-        tags: ["sharepoint", "team lead", "agile", "frontend", "railway"] },
+        tags: ["sharepoint", "team lead", "agile", "frontend", "railway"]
+    },
 
-    {   id: 4, 
-        title: "Draw Start Player: Gamifying Decision-Making", 
+    {
+        id: 4,
+        title: "Draw Start Player: Gamifying Decision-Making",
         short: "Interactive web-based tool for board gamers. It runs on mobile devices, using touch detection and visual effects to randomly select a starting player among multiple participants.",
         img: "start-player-video.gif",
-        project_url: "/projects/start-player/start-player.html"	,
-        links: [{"title": "Demo (needs touchscreen)", "type": "www", "url": "https://ralf-tischer.github.io/bgt/module1.html"},
-                {"title": "GitHub repository", "type": "github", "url": "https://github.com/ralf-tischer/bgt"}, 
-                {"title": "Making of", "type": "youtube", "url": "https://youtu.be/31NmYvYz69s"}],
-        tags: ["html", "javascript", "frontend"] },
-        
-    {   id: 5, 
-        title: "Catia VBA Refactoring: Breathing New Life into Legacy Code", 
+        project_url: "/projects/start-player/start-player.html",
+        links: [
+            { "title": "Demo (needs touchscreen)", "type": "www", "url": "https://ralf-tischer.github.io/bgt/module1.html" },
+            { "title": "GitHub repository", "type": "github", "url": "https://github.com/ralf-tischer/bgt" },
+            { "title": "Making of", "type": "youtube", "url": "https://youtu.be/31NmYvYz69s" }
+        ],
+        tags: ["html", "javascript", "frontend"]
+    },
+
+    {
+        id: 5,
+        title: "Catia VBA Refactoring: Breathing New Life into Legacy Code",
         short: "Successfully refactored a Catia VBA script using MVC architecture, improving performance and adding new functions to adapt to updated data structures.",
         img: "catia-thumbnail.png",
-        project_url: "/projects/catia/catia.html"	,
+        project_url: "/projects/catia/catia.html",
         links: [],
-        tags: ["vba", "cad", "backend", "frontend", "refactoring", "railway"] },
+        tags: ["vba", "cad", "backend", "frontend", "refactoring", "railway"]
+    },
 
-    {   id: 6, 
-        title: "MeisterTask Automation: Streamlining Task Management with Python", 
+    {
+        id: 6,
+        title: "MeisterTask Automation: Streamlining Task Management with Python",
         short: "Python script leveraging the MeisterTask API to automate task creation from absence data in Excel. The script later evolved to handle data import and export between MeisterTask and various formats.",
         img: "meistertask-thumbnail.png",
-        project_url: "/projects/meistertask/meistertask.html"	,
+        project_url: "/projects/meistertask/meistertask.html",
         links: [],
-        tags: ["python", "api", "backend"] },
+        tags: ["python", "api", "backend"]
+    },
 
-    {   id: 7, 
-        title: "Coding Cookbook: My Personal Programming Knowledge Base", 
-        short: "Created a comprehensive coding cookbook repository on GitHub to document and organize coding learnings and shortcuts.",
+    {
+        id: 7,
+        title: "Coding Cookbook: My Personal Programming Knowledge Base",
+        short: "Comprehensive coding cookbook repository on GitHub to document and organize coding learnings and shortcuts.",
         img: "cookbook-thumbnail.png",
-        project_url: "/projects/cookbook/cookbook.html"	,
-        links: [{"title": "GitHub repository", "type": "github", "url": "https://github.com/ralf-tischer/coding-cookbook"}],
-        tags: ["markdown"] },
+        project_url: "/projects/cookbook/cookbook.html",
+        links: [{ "title": "GitHub repository", "type": "github", "url": "https://github.com/ralf-tischer/coding-cookbook" }],
+        tags: ["markdown"]
+    },
 
-    {   id: 8, 
-        title: "Markdown TOC: Building an Automated Table of Contents", 
-        short: "Developed a Python command line tool to automatically generate a table of contents for markdown files, enhancing documentation practices.",
+    {
+        id: 8,
+        title: "Markdown TOC: Building an Automated Table of Contents",
+        short: "Python command line tool to automatically generate a table of contents for markdown files, enhancing documentation practices.",
         img: "md-toc-thumbnail.png",
-        project_url: "/projects/md-toc/md-toc.html"	,
-        links: [{"title": "GitHub repository", "type": "github", "url": "https://github.com/ralf-tischer/md-toc"}],
-        tags: ["python", "markdown", "backend"] },
-  
-      ];
+        project_url: "/projects/md-toc/md-toc.html",
+        links: [{ "title": "GitHub repository", "type": "github", "url": "https://github.com/ralf-tischer/md-toc" }],
+        tags: ["python", "markdown", "backend"]
+    },
+
+    {
+        id: 9,
+        title: "Product Backlog UI: Building a React frontend for Agile Projects",
+        short: "Responsive product backlog app using React, gaining deep insights into component-based architecture, state management, and responsive design.",
+        img: "pl-ui-thumbnail.png",
+        project_url: "/projects/pl-ui/pl-ui.html",
+        links: [
+                { "title": "Demo", "type": "www", "url": "https://ralf-tischer.github.io/product-backlog-react-ui/" },
+                { "title": "GitHub repository", "type": "github", "url": "https://github.com/ralf-tischer/product-backlog-react-ui" }
+        ],
+        tags: ["javascript", "react", "html", "api", "frontend", "agile"]
+    },
+
+    {
+        id: 10,
+        title: "Product Backlog API: Building a secure Flask backend for Database Access",
+        short: "Secure backend for a product backlog app using SQL, Flask, and JWT tokens, enhancing experience with database management and API design.",
+        img: "pl-api-thumbnail.png",
+        project_url: "/projects/pl-api/pl-api.html",
+        links: [
+            { "title": "Demo", "type": "www", "url": "https://ralf-tischer.github.io/product-backlog-react-ui/" },
+            { "title": "GitHub repository", "type": "github", "url": "https://github.com/ralf-tischer/product-backlog-flask-api" }
+        ],
+        tags: ["python", "flask", "api", "sql", "backend"]
+    },
+
+];
+
 
 const TAGS = [
     { tag_short: "python", tag_long: "Programming language Python.", color_text: "black", color_bg: "#ddd" },
@@ -92,9 +137,9 @@ const TAGS = [
 const ALL_TAGS = ["python", "flask", "sharepoint", "javascript", "html", "vba", "markdown", "react", "sql", "api", "cad", "frontend", "backend", "refactoring", "mech eng", "team lead", "project mgmt", "agile", "railway"];
 
 const CONTACT = [
-        {"title": "LinkedIn", "type": "linkedin", "url": "https://www.linkedin.com/in/ralftischer/"},
-        {"title": "GitHub", "type": "github", "url": "https://github.com/ralf-tischer/"}, 
-        {"title": "Email", "type": "email", "url": "mailto:ralf.tischer.1969@gmail.com"}
+    { "title": "LinkedIn", "type": "linkedin", "url": "https://www.linkedin.com/in/ralftischer/" },
+    { "title": "GitHub", "type": "github", "url": "https://github.com/ralf-tischer/" },
+    { "title": "Email", "type": "email", "url": "mailto:ralf.tischer.1969@gmail.com" }
 ];
 
 exports.myProjects = PROJECTS;
