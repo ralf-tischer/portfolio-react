@@ -5,7 +5,7 @@ const PROJECTS = [
         img: "mech-eng-thumbnail.jpg",
         project_url: "/projects/mech-eng/mech-eng.html"	,
         links: [],
-        tags: ["mech eng", "team lead", "project mgmt", "agile"] },
+        tags: ["mech eng", "team lead", "project mgmt", "agile", "railway"] },
 
     {   id: 2, 
         title: "BOM Navigator: Simplifying Bill of Materials Management", 
@@ -13,7 +13,7 @@ const PROJECTS = [
         img: "bom-nav-thumbmail.png",
         project_url: "/projects/bom-nav/bom-nav.html"	,
         links: [],
-        tags: ["python", "flask", "sql", "html", "javascript", "backend", "frontend", "api", "mech eng", "office"] },
+        tags: ["python", "flask", "sql", "html", "javascript", "backend", "frontend", "api", "mech eng", "railway"] },
     
     {   id: 3, 
         title: "SharePoint Intranet: Building a Collaborative Hub", 
@@ -21,7 +21,7 @@ const PROJECTS = [
         img: "intranet-thumbnail.png",
         project_url: "/projects/intranet/intranet.html"	,
         links: [],
-        tags: ["sharepoint", "team lead", "agile", "frontend", "office"] },
+        tags: ["sharepoint", "team lead", "agile", "frontend", "railway"] },
 
     {   id: 4, 
         title: "Draw Start Player: Gamifying Decision-Making", 
@@ -31,7 +31,7 @@ const PROJECTS = [
         links: [{"title": "Demo (needs touchscreen)", "type": "www", "url": "https://ralf-tischer.github.io/bgt/module1.html"},
                 {"title": "GitHub repository", "type": "github", "url": "https://github.com/ralf-tischer/bgt"}, 
                 {"title": "Making of", "type": "youtube", "url": "https://youtu.be/31NmYvYz69s"}],
-        tags: ["html", "javascript", "frontend", "fun"] },
+        tags: ["html", "javascript", "frontend"] },
         
     {   id: 5, 
         title: "Catia VBA Refactoring: Breathing New Life into Legacy Code", 
@@ -39,7 +39,7 @@ const PROJECTS = [
         img: "catia-thumbnail.png",
         project_url: "/projects/catia/catia.html"	,
         links: [],
-        tags: ["vba", "cad", "backend", "frontend", "refactoring", "office"] },
+        tags: ["vba", "cad", "backend", "frontend", "refactoring", "railway"] },
 
     {   id: 6, 
         title: "MeisterTask Automation: Streamlining Task Management with Python", 
@@ -47,7 +47,7 @@ const PROJECTS = [
         img: "meistertask-thumbnail.png",
         project_url: "/projects/meistertask/meistertask.html"	,
         links: [],
-        tags: ["python", "api", "backend", "office"] },
+        tags: ["python", "api", "backend"] },
 
     {   id: 7, 
         title: "Coding Cookbook: My Personal Programming Knowledge Base", 
@@ -55,15 +55,15 @@ const PROJECTS = [
         img: "cookbook-thumbnail.png",
         project_url: "/projects/cookbook/cookbook.html"	,
         links: [{"title": "GitHub repository", "type": "github", "url": "https://github.com/ralf-tischer/coding-cookbook"}],
-        tags: ["markdown", "office", "fun"] },
+        tags: ["markdown"] },
 
     {   id: 8, 
         title: "Markdown TOC: Building an Automated Table of Contents", 
-        short: "Python command-line script to automatically generate tables of contents for Markdown files. This project honed Python text parsing and file handling skills, while exploring the potential of AI for code evaluation.",
-        img: "dummy.png",
-        project_url: "/project"	,
-        links: [],
-        tags: ["python", "markdown", "backend", "office"] },
+        short: "Developed a Python command line tool to automatically generate a table of contents for markdown files, enhancing documentation practices.",
+        img: "md-toc-thumbnail.png",
+        project_url: "/projects/md-toc/md-toc.html"	,
+        links: [{"title": "GitHub repository", "type": "github", "url": "https://github.com/ralf-tischer/md-toc"}],
+        tags: ["python", "markdown", "backend"] },
   
       ];
 
@@ -78,19 +78,18 @@ const TAGS = [
     { tag_short: "react", tag_long: "Javascript library for web and native user interfaces.", color_text: "black", color_bg: "#ddd" },
     { tag_short: "sql", tag_long: "Structured Query Language for database creation and manipulation.", color_text: "black", color_bg: "#ddd" },
     { tag_short: "api", tag_long: "Application Programming Interface to allow communication between two applications.", color_text: "black", color_bg: "#ddd" },
-    { tag_short: "office", tag_long: "For professional use.", color_text: "black", color_bg: "#ddd" },
     { tag_short: "cad", tag_long: "Computer Aided Design.", color_text: "black", color_bg: "#ddd" },
-    { tag_short: "fun", tag_long: "For personal use and fun.", color_text: "black", color_bg: "#ddd" },
     { tag_short: "frontend", tag_long: "Graphical user interface of an application.", color_text: "black", color_bg: "#ddd" },
     { tag_short: "backend", tag_long: "Server-side software part of an application.", color_text: "black", color_bg: "#ddd" },
     { tag_short: "refactoring", tag_long: "Restructuring code, while not changing its original functionality.", color_text: "black", color_bg: "#ddd" },
     { tag_short: "mech eng", tag_long: "Mechanical engineering.", color_text: "black", color_bg: "#ddd" },
     { tag_short: "team lead", tag_long: "Leading and developing a team.", color_text: "black", color_bg: "#ddd" },
     { tag_short: "project mgmt", tag_long: "Managing projects.", color_text: "black", color_bg: "#ddd" },
-    { tag_short: "agile", tag_long: "Mindset to breaks projects down into dynamic phases.", color_text: "black", color_bg: "#ddd" }
+    { tag_short: "agile", tag_long: "Mindset to breaks projects down into dynamic phases.", color_text: "black", color_bg: "#ddd" },
+    { tag_short: "railway", tag_long: "Railway inductry.", color_text: "black", color_bg: "#ddd" }
 ]
 
-const ALL_TAGS = ["python", "flask", "sharepoint", "javascript", "html", "vba", "markdown", "react", "sql", "api", "office", "cad", "fun", "frontend", "backend", "refactoring", "mech eng", "team lead", "project mgmt", "agile"];
+const ALL_TAGS = ["python", "flask", "sharepoint", "javascript", "html", "vba", "markdown", "react", "sql", "api", "cad", "frontend", "backend", "refactoring", "mech eng", "team lead", "project mgmt", "agile", "railway"];
 
 const CONTACT = [
         {"title": "LinkedIn", "type": "linkedin", "url": "https://www.linkedin.com/in/ralftischer/"},

@@ -16,7 +16,7 @@ const Navbar = () => {
                 title='Show Introduction.'
                 onClick={() => handleNavigate('/introduction/')}
                 >
-                Introduction
+                Start
             </div>
             
             <div 
