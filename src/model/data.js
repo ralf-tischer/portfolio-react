@@ -5,7 +5,9 @@ const PROJECTS = [
         short: "Led an engineering team for over twenty years, optimizing processes and developing complex mechanical components for major railway projects.",
         img: "mech-eng-thumbnail.jpg",
         project_url: "/projects/mech-eng/mech-eng.html",
-        links: [],
+        links: [
+            { "title": "Reference", "type": "www", "url": "https://www.wabteccorp.com/transit-rail/braking-systems/bogie-brake-equipment" }
+        ],
         tags: ["mech eng", "team lead", "project mgmt", "agile", "railway"]
     },
 
