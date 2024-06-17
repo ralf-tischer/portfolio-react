@@ -115,25 +115,25 @@ const PROJECTS = [
 
 
 const TAGS = [
-    { tag_short: "python", tag_long: "Programming language Python.", color_text: "black", color_bg: "#ddd" },
-    { tag_short: "flask", tag_long: "A popular Python web framework.", color_text: "black", color_bg: "#ddd" },
-    { tag_short: "sharepoint", tag_long: "Microsoft Sharepoint.", color_text: "black", color_bg: "#ddd" },
-    { tag_short: "javascript", tag_long: "Web programming language Javascript.", color_text: "black", color_bg: "#ddd" },
-    { tag_short: "html", tag_long: "Hypertext markup language.", color_text: "black", color_bg: "#ddd" },
-    { tag_short: "vba", tag_long: "Microsoft Visual Basic for Applications.", color_text: "black", color_bg: "#ddd" },
-    { tag_short: "markdown", tag_long: "Generic text format markdown, for example used in README.md.", color_text: "black", color_bg: "#ddd" },
-    { tag_short: "react", tag_long: "Javascript library for web and native user interfaces.", color_text: "black", color_bg: "#ddd" },
-    { tag_short: "sql", tag_long: "Structured Query Language for database creation and manipulation.", color_text: "black", color_bg: "#ddd" },
-    { tag_short: "api", tag_long: "Application Programming Interface to allow communication between two applications.", color_text: "black", color_bg: "#ddd" },
-    { tag_short: "cad", tag_long: "Computer Aided Design.", color_text: "black", color_bg: "#ddd" },
-    { tag_short: "frontend", tag_long: "Graphical user interface of an application.", color_text: "black", color_bg: "#ddd" },
-    { tag_short: "backend", tag_long: "Server-side software part of an application.", color_text: "black", color_bg: "#ddd" },
-    { tag_short: "refactoring", tag_long: "Restructuring code, while not changing its original functionality.", color_text: "black", color_bg: "#ddd" },
-    { tag_short: "mech eng", tag_long: "Mechanical engineering.", color_text: "black", color_bg: "#ddd" },
-    { tag_short: "team lead", tag_long: "Leading and developing a team.", color_text: "black", color_bg: "#ddd" },
-    { tag_short: "project mgmt", tag_long: "Managing projects.", color_text: "black", color_bg: "#ddd" },
-    { tag_short: "agile", tag_long: "Mindset to breaks projects down into dynamic phases.", color_text: "black", color_bg: "#ddd" },
-    { tag_short: "railway", tag_long: "Railway inductry.", color_text: "black", color_bg: "#ddd" }
+    { tag_short: "python", tag_long: "Programming language Python.", color_text: "black", color_bg: "#ddd", myLevel: 4 },
+    { tag_short: "flask", tag_long: "A popular Python web framework.", color_text: "black", color_bg: "#ddd", myLevel: 4 },
+    { tag_short: "sharepoint", tag_long: "Microsoft Sharepoint.", color_text: "black", color_bg: "#ddd", myLevel: 3 },
+    { tag_short: "javascript", tag_long: "Web programming language Javascript.", color_text: "black", color_bg: "#ddd", myLevel: 3 },
+    { tag_short: "html", tag_long: "Hypertext markup language.", color_text: "black", color_bg: "#ddd", myLevel: 4 },
+    { tag_short: "vba", tag_long: "Microsoft Visual Basic for Applications.", color_text: "black", color_bg: "#ddd", myLevel: 3 },
+    { tag_short: "markdown", tag_long: "Generic text format markdown, for example used in README.md.", color_text: "black", color_bg: "#ddd", myLevel: 4 },
+    { tag_short: "react", tag_long: "Javascript library for web and native user interfaces.", color_text: "black", color_bg: "#ddd", myLevel: 3 },
+    { tag_short: "sql", tag_long: "Structured Query Language for database creation and manipulation.", color_text: "black", color_bg: "#ddd", myLevel: 4 },
+    { tag_short: "api", tag_long: "Application Programming Interface to allow communication between two applications.", color_text: "black", color_bg: "#ddd", myLevel: 3 },
+    { tag_short: "cad", tag_long: "Computer Aided Design.", color_text: "black", color_bg: "#ddd" , myLevel: 3},
+    { tag_short: "frontend", tag_long: "Graphical user interface of an application.", color_text: "black", color_bg: "#ddd", myLevel: 3 },
+    { tag_short: "backend", tag_long: "Server-side software part of an application.", color_text: "black", color_bg: "#ddd", myLevel: 4 },
+    { tag_short: "refactoring", tag_long: "Restructuring code, while not changing its original functionality.", color_text: "black", color_bg: "#ddd", myLevel: 3 },
+    { tag_short: "mech eng", tag_long: "Mechanical engineering.", color_text: "black", color_bg: "#ddd", myLevel: 5 },
+    { tag_short: "team lead", tag_long: "Leading and developing a team.", color_text: "black", color_bg: "#ddd", myLevel: 5 },
+    { tag_short: "project mgmt", tag_long: "Managing projects.", color_text: "black", color_bg: "#ddd", myLevel: 5 },
+    { tag_short: "agile", tag_long: "Mindset to breaks projects down into dynamic phases.", color_text: "black", color_bg: "#ddd", myLevel: 4 },
+    { tag_short: "railway", tag_long: "Railway inductry.", color_text: "black", color_bg: "#ddd", myLevel: 5 }
 ]
 
 const ALL_TAGS = ["python", "flask", "sharepoint", "javascript", "html", "vba", "markdown", "react", "sql", "api", "cad", "frontend", "backend", "refactoring", "mech eng", "team lead", "project mgmt", "agile", "railway"];
