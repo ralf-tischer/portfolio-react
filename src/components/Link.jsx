@@ -1,9 +1,8 @@
 import React from 'react';
-//const { myTags } = require('../model/data.js');
-
-const linkFilepath = '../assets/img/logos/';
 
 const Link = ({ link }) => {
+    const linkFilepath = process.env.PUBLIC_URL + '/assets/img/logos/';
+
     return (
         <div className='logo-container'>
             <div>
