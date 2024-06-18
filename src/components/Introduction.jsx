@@ -37,6 +37,7 @@ const Introduction = () => {
                 <Tags
                     tags={mySkills}
                     clickable={true}
+                    starred={true}
                     handleTagClick={handleTagClick}
                 />
 

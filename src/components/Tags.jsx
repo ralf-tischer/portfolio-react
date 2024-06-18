@@ -3,6 +3,7 @@ import Tag from './Tag';
 
 const Tags = ( {    tags,
                     clickable,
+                    starred,
                     handleTagClick} 
                 ) => {
     return (
@@ -11,6 +12,7 @@ const Tags = ( {    tags,
                 <Tag 
                     tagName={tagName}
                     clickable={clickable}
+                    starred={starred}
                     handleTagClick={handleTagClick} />
             ))}
         </div>

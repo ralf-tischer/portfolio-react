@@ -217,6 +217,11 @@ input:checked + span::before {
     margin: 0.1rem 0rem;
 }
 
+.star{
+    margin-left: 1rem;
+    color: darkred;
+}
+
 /******************
 * Table          
 *******************/
