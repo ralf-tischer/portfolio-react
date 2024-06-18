@@ -1,20 +1,14 @@
 import React from 'react';
-import { useNavigate } from 'react-router-dom';
 import SwitchColorMode from './SwitchColorMode';
 
-const Navbar = () => {
-    const navigate = useNavigate();
+const Navbar = ( {handleRoute} ) => {
 
-    const handleNavigate = ( path ) => {
-        navigate(path);
-    };
-    
     return (
         <div className='navbar'>
             <div 
                 className='button button-details' 
-                title='Show Introduction.'
-                onClick={() => handleNavigate('/introduction/')}
+                title='Back to start.'
+                onClick={() => handleRoute('introduction')}
                 >
                 Start
             </div>
@@ -22,7 +16,7 @@ const Navbar = () => {
             <div 
                 className='button button-details' 
                 title='Show contact details.'
-                onClick={() => handleNavigate('/projects')}
+                onClick={() => handleRoute('projects')}
                 >
                 Projects
             </div>
@@ -30,7 +24,7 @@ const Navbar = () => {
             <div 
                 className='button button-details' 
                 title='Show contact details.'
-                onClick={() => handleNavigate('/contact/')}
+                onClick={() => handleRoute('contact')}
                 >
                 Contact
             </div>
