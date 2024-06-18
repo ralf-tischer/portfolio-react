@@ -8,6 +8,9 @@
     background-color: rgb(224, 224, 224);
     padding: 0.5rem;
     border-radius: 0.5rem;
+    position: sticky; /* Add this line */
+    top: 0; /* And this line */
+    z-index: 1000; /* Optional: this ensures the navbar stays on top of other elements */
 }
 
 .navbar-left {
