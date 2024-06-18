@@ -23,9 +23,9 @@ const Introduction = () => {
                         <img className="image profile" width="50px" src="/portfolio-react/assets/img/profile.jpg" alt="My profile in ACSII art" />
                     </div>
                     <div className='content'>
-                        I am a mechanical engineer leading teams and managing projects.
-                        I solve complex problems by mechanical engineering, processes or team development and software engineering.
-                        The main field of application over the last 25 years is the development subcomponents for railway vehicles.
+                    I am a mechanical engineer who leads teams and manages projects. 
+                    I solve complex problems through mechanical engineering, process optimization, team development, and software engineering. 
+                    My primary field of application over the last 25 years has been the development of subcomponents for railway vehicles.
                     </div>
                 </div>
             </div>
