@@ -7,10 +7,10 @@ const Contact = () => {
 
     return (
         <>
-            <h1>Contact</h1>
+            <h2>Contact</h2>
             <div className='project-card detail'>
 
-                <h2>Ralf Tischer</h2>
+                <h3>Ralf Tischer</h3>
                 <Links links={myContact} />
             </div>
         </>
