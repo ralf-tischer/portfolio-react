@@ -47,7 +47,7 @@ const Projects = () => {
   
   return (
     <div>
-      <h1>Projects</h1>
+      <h2>Projects</h2>
       <Filter 
         projects={projects} 
         onFilter={handleFilter} 
