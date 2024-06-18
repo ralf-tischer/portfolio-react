@@ -69,10 +69,10 @@ const PROJECTS = [
         id: 7,
         title: "Coding Cookbook: My Personal Programming Knowledge Base",
         short: "Comprehensive coding cookbook repository on GitHub to document and organize coding learnings and shortcuts.",
-        img: "cookbook-thumbnail.png",
+        img: "cookbook-thumbnail.gif",
         project_url: "/projects/cookbook/cookbook.html",
         links: [{ "title": "GitHub repository", "type": "github", "url": "https://github.com/ralf-tischer/coding-cookbook" }],
-        tags: ["markdown"]
+        tags: ["markdown", "python", "javascript", "vba"]
     },
 
     {
@@ -92,8 +92,8 @@ const PROJECTS = [
         img: "pl-ui-thumbnail.png",
         project_url: "/projects/pl-ui/pl-ui.html",
         links: [
-                { "title": "Demo", "type": "www", "url": "https://ralf-tischer.github.io/product-backlog-react-ui/" },
-                { "title": "GitHub repository", "type": "github", "url": "https://github.com/ralf-tischer/product-backlog-react-ui" }
+            { "title": "Demo", "type": "www", "url": "https://ralf-tischer.github.io/product-backlog-react-ui/" },
+            { "title": "GitHub repository", "type": "github", "url": "https://github.com/ralf-tischer/product-backlog-react-ui" }
         ],
         tags: ["javascript", "react", "html", "api", "frontend", "agile"]
     },
@@ -110,9 +110,7 @@ const PROJECTS = [
         ],
         tags: ["python", "flask", "api", "sql", "backend"]
     },
-
 ];
-
 
 const TAGS = [
     { tag_short: "python", tag_long: "Programming language Python.", color_text: "black", color_bg: "#ddd", myLevel: 4 },
@@ -125,7 +123,7 @@ const TAGS = [
     { tag_short: "react", tag_long: "Javascript library for web and native user interfaces.", color_text: "black", color_bg: "#ddd", myLevel: 3 },
     { tag_short: "sql", tag_long: "Structured Query Language for database creation and manipulation.", color_text: "black", color_bg: "#ddd", myLevel: 4 },
     { tag_short: "api", tag_long: "Application Programming Interface to allow communication between two applications.", color_text: "black", color_bg: "#ddd", myLevel: 3 },
-    { tag_short: "cad", tag_long: "Computer Aided Design.", color_text: "black", color_bg: "#ddd" , myLevel: 3},
+    { tag_short: "cad", tag_long: "Computer Aided Design.", color_text: "black", color_bg: "#ddd", myLevel: 3 },
     { tag_short: "frontend", tag_long: "Graphical user interface of an application.", color_text: "black", color_bg: "#ddd", myLevel: 3 },
     { tag_short: "backend", tag_long: "Server-side software part of an application.", color_text: "black", color_bg: "#ddd", myLevel: 4 },
     { tag_short: "refactoring", tag_long: "Restructuring code, while not changing its original functionality.", color_text: "black", color_bg: "#ddd", myLevel: 3 },

@@ -23,8 +23,9 @@ const Introduction = () => {
                         <img className="image profile" width="50px" src="/portfolio-react/assets/img/profile.jpg" alt="My profile in ACSII art" />
                     </div>
                     <div className='content'>
-                        I am a mechanical engineer leading teams and managing projects. 
+                        I am a mechanical engineer leading teams and managing projects.
                         I solve complex problems by mechanical engineering, processes or team development and software engineering.
+                        The main field of application over the last 25 years is the development subcomponents for railway vehicles.
                     </div>
                 </div>
             </div>
@@ -32,7 +33,8 @@ const Introduction = () => {
             <div className='project-card mission nowrap'>
                 <h2>Skills and Experiences</h2>
                 <div className='content'>
-                    Click on a skill to see the projects I have worked on:
+                    Here are some of my skills with my personal rating.
+                    Click on a tag to see the projects I have worked on.
                 </div>
                 <Tags
                     tags={mySkills}
@@ -40,7 +42,6 @@ const Introduction = () => {
                     starred={true}
                     handleTagClick={handleTagClick}
                 />
-
             </div>
 
             <div className='project-card mission nowrap'>
