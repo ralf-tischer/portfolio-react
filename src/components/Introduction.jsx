@@ -13,10 +13,10 @@ const Introduction = () => {
 
     return (
         <div className='detail'>
-            <h1>Introduction</h1>
+            <h1>Ralf Tischer - Portfolio</h1>
 
+            <h2>My Mission</h2>
             <div className='project-card mission nowrap'>
-                <h2>My Mission</h2>
                 <div className='project-card mission no-border'>
 
                     <div className="image-container content">
@@ -30,11 +30,11 @@ const Introduction = () => {
                 </div>
             </div>
 
+            <h2>Skills and Experiences</h2>
             <div className='project-card mission nowrap'>
-                <h2>Skills and Experiences</h2>
                 <div className='content'>
                     Here are some of my skills with my personal rating.
-                    Click on a tag to see the projects I have worked on.
+                    Click on a tag and navigate to the projects I have worked on related to that skill.
                 </div>
                 <Tags
                     tags={mySkills}
@@ -43,26 +43,6 @@ const Introduction = () => {
                     handleTagClick={handleTagClick}
                 />
             </div>
-
-            <div className='project-card mission nowrap'>
-                <h2>Projects</h2>
-                <div
-                    className='button'
-                    onClick={() => navigate('/projects/')}>
-                    Click here for an overview of my projects.
-                </div>
-            </div>
-
-            <div className='project-card mission nowrap'>
-                <h2>Contact</h2>
-
-                <div
-                    className='button'
-                    onClick={() => navigate('/contact/')}>
-                    Click here to get in touch with me.
-                </div>
-            </div>
-
         </div>
     );
 };
