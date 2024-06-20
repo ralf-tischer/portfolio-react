@@ -110,6 +110,46 @@ const PROJECTS = [
         ],
         tags: ["python", "flask", "api", "sql", "backend"]
     },
+    
+    {
+        id: 11,
+        title: "Value Analysis and Value Engineering: Focusing on Customer Value",
+        short: "Certified value analyst with expertise in value analysis projects, achieving significant product developments and cost reductions through advanced methodologies.",
+        img: "vave-thumbnail.png",
+        project_url: "/projects/vave/vave.html",
+        links: [],
+        tags: ["mech eng", "project mgmt", "railway"]
+    },
+
+    {
+        id: 12,
+        title: "Product Management: Leading Product Development and Standardization",
+        short: "Led product management and acted as a product manager, focusing on design and cost improvements, subcontracting, and product standardization.",
+        img: "dummy.png",
+        project_url: "/projects/prod-man/prod-man.html",
+        links: [],
+        tags: ["mech eng", "team lead", "project mgmt", "railway"]
+    },
+    
+    {
+        id: 13,
+        title: "Project Engineer: From Customer Requirement to Validated Product",
+        short: "Began career as a project engineer, managing technical offers and leading product development for mechanical brake systems in railway projects.",
+        img: "dummy.png",
+        project_url: "/projects/project-eng/project-eng.html",
+        links: [],
+        tags: ["project mgmt", "railway", "mech eng"]
+    },
+    
+    {
+        id: 14,
+        title: "Artificial Intelligence: AI for Daily Tasks and Engineering Projects",
+        short: "Embraced AI tools for daily tasks and pursued formal training to understand and create AI models, integrating AI projects into engineering work.",
+        img: "dummy.png",
+        project_url: "/projects/ai/ai.html",
+        links: [],
+        tags: ["mech eng", "team lead", "python"]
+    },
 ];
 
 const TAGS = [
@@ -134,7 +174,7 @@ const TAGS = [
     { tag_short: "railway", tag_long: "Railway inductry.", color_text: "black", color_bg: "#ddd", myLevel: 5 }
 ]
 
-const ALL_TAGS = ["python", "flask", "sharepoint", "javascript", "html", "vba", "markdown", "react", "sql", "api", "cad", "frontend", "backend", "refactoring", "mech eng", "team lead", "project mgmt", "agile", "railway"];
+const ALL_TAGS = [,"mech eng", "team lead", "project mgmt", "railway", "python", "javascript", "html", "markdown", "frontend", "backend", "flask", "react", "sql", "sharepoint", "vba", "api", "cad", "refactoring", "agile"];
 
 const CONTACT = [
     { "title": "LinkedIn", "type": "linkedin", "url": "https://www.linkedin.com/in/ralftischer/" },
