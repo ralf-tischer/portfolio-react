@@ -174,7 +174,7 @@ const TAGS = [
     { tag_short: "railway", tag_long: "Railway inductry.", color_text: "black", color_bg: "#ddd", myLevel: 5 }
 ]
 
-const ALL_TAGS = [,"mech eng", "team lead", "project mgmt", "railway", "python", "javascript", "html", "markdown", "frontend", "backend", "flask", "react", "sql", "sharepoint", "vba", "api", "cad", "refactoring", "agile"];
+const ALL_TAGS = ["mech eng", "team lead", "project mgmt", "railway", "python", "javascript", "html", "markdown", "frontend", "backend", "flask", "react", "sql", "sharepoint", "vba", "api", "cad", "refactoring", "agile"];
 
 const CONTACT = [
     { "title": "LinkedIn", "type": "linkedin", "url": "https://www.linkedin.com/in/ralftischer/" },
