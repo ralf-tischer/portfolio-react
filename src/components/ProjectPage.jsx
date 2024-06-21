@@ -10,14 +10,12 @@ const { myProjects } = require('../model/data.js');
 const ProjectPage = ({ handleTagClick }) => {
     let { id } = useParams();
     const [projectHtml, setProjectHtml] = useState('');
-
-    //Get project with project.id = id from myProjects
     const project = myProjects.find(project => project.id === parseInt(id));
 
     const getMinMaxId = () => {
         let minId = myProjects[0].id;
         let maxId = myProjects[0].id;
-    
+
         myProjects.forEach(project => {
             if (project.id < minId) {
                 minId = project.id;
@@ -36,8 +34,7 @@ const ProjectPage = ({ handleTagClick }) => {
                 const data = await response.text();
                 setProjectHtml(data);
             } catch (error) {
-                // Render error message
-                setProjectHtml(`<h1>Error loading project page</h1><p>${error.message}</p>`); 
+                setProjectHtml(`<h1>Error loading project page</h1><p>${error.message}</p>`);
                 console.error(error);
             }
         };
@@ -56,8 +53,8 @@ const ProjectPage = ({ handleTagClick }) => {
             </p>
 
             <h2>Tags</h2>
-            <Tags 
-                tags={project.tags} 
+            <Tags
+                tags={project.tags}
                 clickable={false}
                 starred={true}
                 handleTagClick={handleTagClick}
@@ -66,19 +63,17 @@ const ProjectPage = ({ handleTagClick }) => {
             <h2>Project Details</h2>
             {ReactHtmlParser(projectHtml)}
 
-            { project && project.links && project.links.length > 0 &&   
-            <>
-                <h2>Links</h2>
-                <Links 
-                    links={project.links} />
-            </> }
+            {project && project.links && project.links.length > 0 &&
+                <>
+                    <h2>Links</h2>
+                    <Links
+                        links={project.links} />
+                </>}
 
-
-
-            <ProjectNavigation 
-                project={project} 
-                minId={minId} 
-                maxId={maxId} 
+            <ProjectNavigation
+                project={project}
+                minId={minId}
+                maxId={maxId}
             />
         </div>
     );
