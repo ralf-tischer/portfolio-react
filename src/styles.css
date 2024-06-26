@@ -61,7 +61,8 @@ body.dark-mode {
     justify-content: center;
     flex-grow: 1;
     border-radius: 0.5rem;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    /* box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);  */
+    box-shadow: 0 4px 8px 0 rgba(177, 177, 177, 0.2), 0 6px 20px 0 rgba(177, 177, 177, 0.19); 
     margin: 0.5rem 0.5rem;
     padding: 0.5rem;
 }
@@ -202,7 +203,10 @@ input:checked + span::before {
     width: 60px;
     height: 60px;
     border-radius: 50%;
+}
 
+.image.small {
+    width: 40%;
 }
 
 /******************
@@ -240,8 +244,7 @@ input:checked + span::before {
     display: flex;
     text-align: center;
     flex-direction: row;
-    align-content: center;
-    align-items: flex-start;
+    align-items: baseline;
     justify-content: center;
     width: 100%;
 }
@@ -250,8 +253,8 @@ input:checked + span::before {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: baseline;
     align-content: center;
-    width: 20%;
     margin: 1rem;
 }
 
