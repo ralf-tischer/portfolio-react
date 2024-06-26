@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
-import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
-import { useParams } from 'react-router-dom';
+
+import { BrowserRouter as Router, Route, Routes, useParams } from 'react-router-dom';
 import Navbar from './components/Navbar.jsx';
 import Projects from './components/Projects.jsx';
 import ProjectPage from './components/ProjectPage.jsx';
@@ -14,11 +14,18 @@ const App = () => {
   
   useEffect(() => {
     console.log("useEffect Route: ", target);
-    const element = document.getElementById(target);
-    if (element) { 
-      console.log("useEffect Element: ", element);
-      element.scrollIntoView({ behavior: 'smooth' })
-    };
+    // Adding a slight delay to ensure the element is rendered, especially for dynamic content
+    const timer = setTimeout(() => {
+      const element = document.getElementById(target);
+      if (element) {
+        console.log("useEffect Element: ", element);
+        element.scrollIntoView({ behavior: 'smooth' });
+      } else {
+        console.log("Element not found: ", target);
+      }
+    }, 100); // Adjust the delay as needed
+  
+    return () => clearTimeout(timer); // Cleanup the timer
   }, [target]);
 
   const handleTagClick = (tag) => {
@@ -27,15 +34,13 @@ const App = () => {
 
   const MainPageWrapper = () => {
     const { tags, ids } = useParams();
-
-    /*
+    
     useEffect(() => {
       if (tags || ids) {
         const element = document.getElementById('projects');
         if (element) element.scrollIntoView({ behavior: 'smooth' });
       }
     }, [tags, ids]);
-    */
 
     return (
       <>
@@ -47,12 +52,11 @@ const App = () => {
   }
 
   const ProjectPageWrapper = () => {
-    //<Route path="/id/:id" element={<ProjectPage handleTagClick={handleTagClick} />} />
+    const { id } = useParams(); // Use useParams to get the id parameter from the URL.
     return (
-      <ProjectPage handleTagClick={handleTagClick} />
-    )
+      <ProjectPage id={id} handleTagClick={handleTagClick} />
+    );
   }
-
 
   const handleRoute = (route) => {
     setTarget(route);
@@ -63,7 +67,7 @@ const App = () => {
       <Router basename={baseUrl}>
         <Navbar handleRoute={handleRoute} />
         <Routes>
-          <Route path="/id/:id" element={<ProjectPageWrapper handleTagClick={handleTagClick} />} />
+          <Route path="/id/:id" element={<ProjectPageWrapper />} />
           <Route path="/tags/:tags" element={<MainPageWrapper target={'projects'}/>} />
           <Route path="/ids/:ids" element={<MainPageWrapper target={'projects'}/>} />
           <Route path="/contact" element={<MainPageWrapper target={'contact'}/>} />
@@ -71,15 +75,7 @@ const App = () => {
         </Routes>
       </Router>
     </div>
-  )
+  );
 }
 
 export default App;
-
-/*
-          <Route path="/" element={<MainContent />} />
-          <Route path="/tags/:tags" element={<MainContent />} />
-          <Route path="/ids/:ids" element={<MainContent />} />
-          <Route path="/id/:id" element={<ProjectPage handleTagClick={handleTagClick} />} />
-          <Route path="/contact/" element={<ContactRoute />} />
-*/
