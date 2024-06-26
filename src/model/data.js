@@ -13,16 +13,38 @@ const PROJECTS = [
 
     {
         id: 2,
-        title: "BOM Navigator: Simplifying Bill of Materials Management",
-        short: "Python-based web application to simplify navigating and extracting data from complex bill of materials (BOMs). It automates data retrieval from an ERP system, allowing users to browse BOM structures and integrate historical sales data for informed decision-making.",
-        img: "bom-nav-thumbmail.png",
-        project_url: "/projects/bom-nav/bom-nav.html",
+        title: "Project Engineer: From Customer Requirement to Validated Product",
+        short: "Began career as a project engineer, managing technical offers and leading product development for mechanical brake systems in railway projects.",
+        img: "project-eng-thumbnail.jpg",
+        project_url: "/projects/project-eng/project-eng.html",
         links: [],
-        tags: ["python", "flask", "sql", "html", "javascript", "backend", "frontend", "api", "mech eng", "railway"]
+        tags: ["project mgmt", "railway", "mech eng"]
+    },
+    
+    {
+        id: 3,
+        title: "Product Management: Leading Product Development and Standardization",
+        short: "Led product management and acted as a product manager, focusing on design and cost improvements, subcontracting, and product standardization.",
+        img: "prod-man-thumbnail.png",
+        project_url: "/projects/prod-man/prod-man.html",
+        links: [
+            { "title": "Reference", "type": "www", "url": "https://www.wabteccorp.com/transit-rail/braking-systems/bogie-brake-equipment" }
+        ],
+        tags: ["mech eng", "team lead", "project mgmt", "railway"]
+    },
+        
+    {
+        id: 4,
+        title: "Value Analysis and Value Engineering: Focusing on Customer Value",
+        short: "Certified value analyst with expertise in value analysis projects, achieving significant product developments and cost reductions through advanced methodologies.",
+        img: "vave-thumbnail.png",
+        project_url: "/projects/vave/vave.html",
+        links: [],
+        tags: ["mech eng", "project mgmt", "railway"]
     },
 
     {
-        id: 3,
+        id: 5,
         title: "SharePoint Intranet: Building a Collaborative Hub",
         short: "Led a self-organized team to design and implement a local intranet site with Microsoft SharePoint, achieving high user satisfaction and ongoing engagement.",
         img: "intranet-thumbnail.png",
@@ -32,7 +54,17 @@ const PROJECTS = [
     },
 
     {
-        id: 4,
+        id: 6,
+        title: "BOM Navigator: Simplifying Bill of Materials Management",
+        short: "Python-based web application to simplify navigating and extracting data from complex bill of materials (BOMs). It automates data retrieval from an ERP system, allowing users to browse BOM structures and integrate historical sales data for informed decision-making.",
+        img: "bom-nav-thumbmail.png",
+        project_url: "/projects/bom-nav/bom-nav.html",
+        links: [],
+        tags: ["python", "flask", "sql", "html", "javascript", "backend", "frontend", "api", "mech eng", "railway"]
+    },
+
+    {
+        id: 7,
         title: "Draw Start Player: Gamifying Decision-Making",
         short: "Interactive web-based tool for board gamers. It runs on mobile devices, using touch detection and visual effects to randomly select a starting player among multiple participants.",
         img: "start-player-video.gif",
@@ -46,60 +78,20 @@ const PROJECTS = [
     },
 
     {
-        id: 5,
-        title: "Catia VBA Refactoring: Breathing New Life into Legacy Code",
-        short: "Successfully refactored a Catia VBA script using MVC architecture, improving performance and adding new functions to adapt to updated data structures.",
-        img: "catia-thumbnail.png",
-        project_url: "/projects/catia/catia.html",
-        links: [],
-        tags: ["vba", "cad", "backend", "frontend", "refactoring", "railway"]
-    },
-
-    {
-        id: 6,
-        title: "MeisterTask Automation: Streamlining Task Management with Python",
-        short: "Python script leveraging the MeisterTask API to automate task creation from absence data in Excel. The script later evolved to handle data import and export between MeisterTask and various formats.",
-        img: "meistertask-thumbnail.png",
-        project_url: "/projects/meistertask/meistertask.html",
-        links: [],
-        tags: ["python", "api", "backend"]
-    },
-
-    {
-        id: 7,
-        title: "Coding Cookbook: My Personal Programming Knowledge Base",
-        short: "Comprehensive coding cookbook repository on GitHub to document and organize coding learnings and shortcuts.",
-        img: "cookbook-thumbnail.gif",
-        project_url: "/projects/cookbook/cookbook.html",
-        links: [{ "title": "GitHub repository", "type": "github", "url": "https://github.com/ralf-tischer/coding-cookbook" }],
-        tags: ["markdown", "python", "javascript", "vba"]
-    },
-
-    {
         id: 8,
-        title: "Markdown TOC: Building an Automated Table of Contents",
-        short: "Python command line tool to automatically generate a table of contents for markdown files, enhancing documentation practices.",
-        img: "md-toc-thumbnail.png",
-        project_url: "/projects/md-toc/md-toc.html",
-        links: [{ "title": "GitHub repository", "type": "github", "url": "https://github.com/ralf-tischer/md-toc" }],
-        tags: ["python", "markdown", "backend"]
-    },
-
-    {
-        id: 9,
         title: "Product Backlog UI: Building a React frontend for Agile Projects",
         short: "Responsive product backlog app using React, gaining deep insights into component-based architecture, state management, and responsive design.",
         img: "pl-ui-thumbnail.png",
         project_url: "/projects/pl-ui/pl-ui.html",
         links: [
-            { "title": "Demo", "type": "www", "url": "https://ralf-tischer.github.io/product-backlog-react-ui/" },
+            { "title": "Demo. Username: demo, Password: ralf-tischer", "type": "www", "url": "https://ralf-tischer.github.io/product-backlog-react-ui/" },
             { "title": "GitHub repository", "type": "github", "url": "https://github.com/ralf-tischer/product-backlog-react-ui" }
         ],
         tags: ["javascript", "react", "html", "api", "frontend", "agile"]
     },
 
     {
-        id: 10,
+        id: 9,
         title: "Product Backlog API: Building a secure Flask backend for Database Access",
         short: "Secure backend for a product backlog app using SQL, Flask, and JWT tokens, enhancing experience with database management and API design.",
         img: "pl-api-thumbnail.png",
@@ -110,46 +102,57 @@ const PROJECTS = [
         ],
         tags: ["python", "flask", "api", "sql", "backend"]
     },
-    
+
+    {
+        id: 10,
+        title: "Coding Cookbook: My Personal Programming Knowledge Base",
+        short: "Comprehensive coding cookbook repository on GitHub to document and organize coding learnings and shortcuts.",
+        img: "cookbook-thumbnail.gif",
+        project_url: "/projects/cookbook/cookbook.html",
+        links: [{ "title": "GitHub repository", "type": "github", "url": "https://github.com/ralf-tischer/coding-cookbook" }],
+        tags: ["markdown", "python", "javascript", "vba"]
+    },
+
     {
         id: 11,
-        title: "Value Analysis and Value Engineering: Focusing on Customer Value",
-        short: "Certified value analyst with expertise in value analysis projects, achieving significant product developments and cost reductions through advanced methodologies.",
-        img: "vave-thumbnail.png",
-        project_url: "/projects/vave/vave.html",
-        links: [],
-        tags: ["mech eng", "project mgmt", "railway"]
+        title: "Markdown TOC: Building an Automated Table of Contents",
+        short: "Python command line tool to automatically generate a table of contents for markdown files, enhancing documentation practices.",
+        img: "md-toc-thumbnail.png",
+        project_url: "/projects/md-toc/md-toc.html",
+        links: [{ "title": "GitHub repository", "type": "github", "url": "https://github.com/ralf-tischer/md-toc" }],
+        tags: ["python", "markdown", "backend"]
     },
 
     {
         id: 12,
-        title: "Product Management: Leading Product Development and Standardization",
-        short: "Led product management and acted as a product manager, focusing on design and cost improvements, subcontracting, and product standardization.",
-        img: "dummy.png",
-        project_url: "/projects/prod-man/prod-man.html",
+        title: "MeisterTask Automation: Streamlining Task Management with Python",
+        short: "Python script leveraging the MeisterTask API to automate task creation from absence data in Excel. The script later evolved to handle data import and export between MeisterTask and various formats.",
+        img: "meistertask-thumbnail.png",
+        project_url: "/projects/meistertask/meistertask.html",
         links: [],
-        tags: ["mech eng", "team lead", "project mgmt", "railway"]
+        tags: ["python", "api", "backend"]
     },
-    
+
     {
         id: 13,
-        title: "Project Engineer: From Customer Requirement to Validated Product",
-        short: "Began career as a project engineer, managing technical offers and leading product development for mechanical brake systems in railway projects.",
-        img: "dummy.png",
-        project_url: "/projects/project-eng/project-eng.html",
-        links: [],
-        tags: ["project mgmt", "railway", "mech eng"]
-    },
-    
-    {
-        id: 14,
         title: "Artificial Intelligence: AI for Daily Tasks and Engineering Projects",
         short: "Embraced AI tools for daily tasks and pursued formal training to understand and create AI models, integrating AI projects into engineering work.",
-        img: "dummy.png",
+        img: "ai-thumbnail.png",
         project_url: "/projects/ai/ai.html",
         links: [],
         tags: ["mech eng", "team lead", "python"]
     },
+    
+    {
+        id: 14,
+        title: "Catia VBA Refactoring: Breathing New Life into Legacy Code",
+        short: "Successfully refactored a Catia VBA script using MVC architecture, improving performance and adding new functions to adapt to updated data structures.",
+        img: "catia-thumbnail.png",
+        project_url: "/projects/catia/catia.html",
+        links: [],
+        tags: ["vba", "cad", "backend", "frontend", "refactoring", "railway"]
+    }
+
 ];
 
 const TAGS = [
