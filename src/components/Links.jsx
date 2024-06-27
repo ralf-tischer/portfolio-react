@@ -4,8 +4,9 @@ import Link from './Link';
 const Links = ({ links }) => {
     return (
         <div className='links-container'>
-            { links.map((link) => (
+            { links.map((link, index) => (
                 <Link 
+                    key={index}
                     link={link}
                 />
             ))}
