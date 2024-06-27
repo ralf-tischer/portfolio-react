@@ -1,40 +1,44 @@
 import React, { useEffect, useState } from 'react';
-
-import { BrowserRouter as Router, Route, Routes, useParams } from 'react-router-dom';
+import { HashRouter as Router, Route, Routes, useParams } from 'react-router-dom';
 import Navbar from './components/Navbar.jsx';
 import Projects from './components/Projects.jsx';
 import ProjectPage from './components/ProjectPage.jsx';
 import Contact from './components/Contact.jsx';
 import Introduction from './components/Introduction.jsx';
 
-const pathParts = window.location.pathname.split('/');
-const baseUrl = pathParts.length > 1 && pathParts[1] ? "/" : window.location.pathname;
+//const baseUrl = process.env.PUBLIC_URL || (window.location.pathname.includes('portfolio-react') ? '/portfolio-react' : '/');
+const baseUrl = "/";
+
+console.log('window.location.pathname:', window.location.pathname);
+console.log('process.env.PUBLIC_URL:', process.env.PUBLIC_URL);
+console.log('baseUrl:', baseUrl);
+
 
 const App = () => {
   const [target, setTarget] = useState(null);
   
   useEffect(() => {
-    // Adding a slight delay to ensure the element is rendered, especially for dynamic content
     const timer = setTimeout(() => {
       const element = document.getElementById(target);
       if (element) {
         element.scrollIntoView({ behavior: 'smooth' });
       }
-    }, 150); // Adjust the delay as needed
+    }, 150);
   
-    return () => clearTimeout(timer); // Cleanup the timer
+    return () => clearTimeout(timer);
   }, [target]);
 
   const handleTagClick = (tag) => {
-    console.log("Tagging not from here!");
+    console.log("Tag clicked:", tag); // Simulated use of 'tag'
   }
 
   const MainPageWrapper = () => {
     let { tags, ids } = useParams();
-
-    // Convert tags and ids from string to array
     tags = tags ? tags.split(',') : [];
     ids = ids ? ids.split(',').map(Number) : [];
+
+    console.log('tags:', tags);
+    console.log('ids:', ids);
     
     useEffect(() => {
       if (tags || ids) {
@@ -53,7 +57,7 @@ const App = () => {
   }
 
   const ProjectPageWrapper = () => {
-    const { id } = useParams(); // Use useParams to get the id parameter from the URL.
+    const { id } = useParams();
     return (
       <ProjectPage id={id} handleTagClick={handleTagClick} />
     );
@@ -62,8 +66,6 @@ const App = () => {
   const handleRoute = (route) => {
     setTarget(route);
   }
-
-  console.log('baseUrl:', baseUrl);
 
   return (
     <div className='container'>

@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Redirecting...</title>
+  <script>
+    // Check if the URL contains a path
+    var path = window.location.href.split('/').pop();
+    console.log("path: " + path);
+    if (path && path !== "404.html") {
+      // Redirect to the homepage with the path
+      window.location.replace('/portfolio-react/index.html#' + path);
+      console.log('Redirecting to /portfolio-react/index.html#' + path);
+    }
+  </script>
+</head>
+<body>
+  <p>Redirecting...</p>
+</body>
+</html>
