@@ -1,4 +1,12 @@
 /******************
+* Vars          
+*******************/
+:root {
+    --shadow-color-light: rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);/* Light mode shadow color */
+    --shadow-color-dark: rgba(255, 255, 255, 0.2), 0 6px 20px 0 rgba(255, 255, 255, 0.19);
+}
+
+/******************
 * Navbar          
 *******************/
 .navbar {
@@ -42,6 +50,7 @@ body {
 body.dark-mode {
     background-color: black;
     color: white;
+    --shadow-color-light: var(--shadow-color-dark); /* Dark mode shadow color */
 }
 
 .container {
@@ -61,8 +70,7 @@ body.dark-mode {
     justify-content: center;
     flex-grow: 1;
     border-radius: 0.5rem;
-    /* box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);  */
-    box-shadow: 0 4px 8px 0 rgba(177, 177, 177, 0.2), 0 6px 20px 0 rgba(177, 177, 177, 0.19); 
+    box-shadow: 0 4px 8px 0 var(--shadow-color-light); 
     margin: 0.5rem 0.5rem;
     padding: 0.5rem;
 }
