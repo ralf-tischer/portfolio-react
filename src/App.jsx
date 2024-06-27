@@ -7,23 +7,20 @@ import ProjectPage from './components/ProjectPage.jsx';
 import Contact from './components/Contact.jsx';
 import Introduction from './components/Introduction.jsx';
 
-const baseUrl = window.location.pathname;
+const pathParts = window.location.pathname.split('/');
+const baseUrl = pathParts.length > 1 && pathParts[1] ? "/" : window.location.pathname;
 
 const App = () => {
   const [target, setTarget] = useState(null);
   
   useEffect(() => {
-    console.log("useEffect Route: ", target);
     // Adding a slight delay to ensure the element is rendered, especially for dynamic content
     const timer = setTimeout(() => {
       const element = document.getElementById(target);
       if (element) {
-        console.log("useEffect Element: ", element);
         element.scrollIntoView({ behavior: 'smooth' });
-      } else {
-        console.log("Element not found: ", target);
       }
-    }, 100); // Adjust the delay as needed
+    }, 150); // Adjust the delay as needed
   
     return () => clearTimeout(timer); // Cleanup the timer
   }, [target]);
@@ -33,7 +30,11 @@ const App = () => {
   }
 
   const MainPageWrapper = () => {
-    const { tags, ids } = useParams();
+    let { tags, ids } = useParams();
+
+    // Convert tags and ids from string to array
+    tags = tags ? tags.split(',') : [];
+    ids = ids ? ids.split(',').map(Number) : [];
     
     useEffect(() => {
       if (tags || ids) {
@@ -61,6 +62,8 @@ const App = () => {
   const handleRoute = (route) => {
     setTarget(route);
   }
+
+  console.log('baseUrl:', baseUrl);
 
   return (
     <div className='container'>
