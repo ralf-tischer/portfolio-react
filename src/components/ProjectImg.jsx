@@ -13,11 +13,7 @@ const ProjectImg = ({ project, setIsLandscape }) => {
     }, [filePath, setIsLandscape]);
 
     return (
-        <>
-            {fileType === "mp4" 
-                ? <video src={filePath} alt={project.title} className="image thumbnail" autoPlay muted></video>
-                : <img src={filePath} alt={project.title} className="image thumbnail"></img>}
-        </>
+        <img src={filePath} alt={project.title} className="image thumbnail"></img>
     );
 }
 
