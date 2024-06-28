@@ -30,7 +30,7 @@ Projects have tags as attributes. In the overview, projects can be filtered by t
 | Contact | | | |
 | Filter | projects, onFilter | | Not used anymore in <Projects> |
 | ProjectPage | handleTagClick | projectHtml | |
-| Projects | ids, tags | | Utilizes useNavigate() to change filter |
+| Projects | ids, tags | projects, filteredProjects | Utilizes useNavigate() to change filter |
 | ProjectCard | key, project, handleOpenProjectDetails, handleTagClick | imgIsLandscape | |
 | ProjectTitle | project, handleOpenProjectDetails | |
 | ProjectImg | project, setIsLandscape 
