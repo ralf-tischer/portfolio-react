@@ -33,9 +33,11 @@ const Projects = ({ ids,tags }) => {
     navigate(`/tags/${tag}`);
   }
 
+  /*
   const handleFilter = (filteredProjects) => {
     setFilteredProjects(filteredProjects);
   };
+  */
   
   return (
     <div>
