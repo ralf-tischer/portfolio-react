@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
-import Filter from './Filter';
 import ProjectCard from './ProjectCard.jsx';
 const { myProjects } = require('../model/data.js');
 
@@ -8,19 +7,12 @@ const Projects = ({ ids,tags }) => {
   const [projects] = useState(myProjects);
   const [filteredProjects, setFilteredProjects] = useState(projects);
   const navigate = useNavigate();
-  // const params = useParams();
 
   const handleOpenProjectDetails = (id) => {
     navigate(`/id/${id}`);
   }
 
   useEffect(() => {
-    //let { tags, ids } = params;
-
-    // Convert tags and ids from string to array
-    // tags = tags ? tags.split(',') : [];
-    //ids = ids ? ids.split(',').map(Number) : [];
-
     let filtered = projects;
   
     // Filter by tags
