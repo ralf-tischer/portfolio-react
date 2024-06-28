@@ -32,19 +32,9 @@ const PROJECTS = [
         ],
         tags: ["mech eng", "team lead", "project mgmt", "railway"]
     },
-        
-    {
-        id: 4,
-        title: "Value Analysis and Value Engineering: Focusing on Customer Value",
-        short: "Certified value analyst with expertise in value analysis projects, achieving significant product developments and cost reductions through advanced methodologies.",
-        img: "vave-thumbnail.png",
-        project_url: "/projects/vave/vave.html",
-        links: [],
-        tags: ["mech eng", "project mgmt", "railway"]
-    },
 
     {
-        id: 5,
+        id: 4,
         title: "SharePoint Intranet: Building a Collaborative Hub",
         short: "Led a self-organized team to design and implement a local intranet site with Microsoft SharePoint, achieving high user satisfaction and ongoing engagement.",
         img: "intranet-thumbnail.png",
@@ -52,15 +42,25 @@ const PROJECTS = [
         links: [],
         tags: ["sharepoint", "team lead", "agile", "frontend", "railway"]
     },
-
+        
     {
-        id: 6,
+        id: 5,
         title: "BOM Navigator: Simplifying Bill of Materials Management",
         short: "Python-based web application to simplify navigating and extracting data from complex bill of materials (BOMs). It automates data retrieval from an ERP system, allowing users to browse BOM structures and integrate historical sales data for informed decision-making.",
         img: "bom-nav-thumbmail.png",
         project_url: "/projects/bom-nav/bom-nav.html",
         links: [],
         tags: ["python", "flask", "sql", "html", "javascript", "backend", "frontend", "api", "mech eng", "railway"]
+    },
+
+    {
+        id: 6,
+        title: "Value Analysis and Value Engineering: Focusing on Customer Value",
+        short: "Certified value analyst with expertise in value analysis projects, achieving significant product developments and cost reductions through advanced methodologies.",
+        img: "vave-thumbnail.png",
+        project_url: "/projects/vave/vave.html",
+        links: [],
+        tags: ["mech eng", "project mgmt", "railway"]
     },
 
     {
