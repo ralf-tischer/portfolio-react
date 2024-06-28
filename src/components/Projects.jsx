@@ -48,10 +48,6 @@ const Projects = ({ ids,tags }) => {
   return (
     <div>
       <h2>Projects</h2>
-      <Filter 
-        projects={projects} 
-        onFilter={handleFilter} 
-      />
       <div className='projects'>
         {filteredProjects.map((project) => (
           <ProjectCard 
