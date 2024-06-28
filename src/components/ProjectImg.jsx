@@ -2,7 +2,6 @@ import React, { useEffect } from 'react';
 
 const ProjectImg = ({ project, setIsLandscape }) => {
     const filePath = process.env.PUBLIC_URL + "/assets/img/" + project.img;
-    const fileType = project.img.split('.').pop();
 
     useEffect(() => {
         const img = new Image();
