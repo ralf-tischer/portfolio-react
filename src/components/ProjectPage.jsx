@@ -55,7 +55,7 @@ const ProjectPage = ({ handleTagClick }) => {
             <h2>Tags</h2>
             <Tags
                 tags={project.tags}
-                clickable={false}
+                clickable={true}
                 starred={true}
                 handleTagClick={handleTagClick}
             />

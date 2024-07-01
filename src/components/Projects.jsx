@@ -3,7 +3,7 @@ import { useNavigate } from 'react-router-dom';
 import ProjectCard from './ProjectCard.jsx';
 const { myProjects } = require('../model/data.js');
 
-const Projects = ({ ids,tags }) => {
+const Projects = ({ ids, tags, handleTagClick }) => {
   const [projects] = useState(myProjects);
   const [filteredProjects, setFilteredProjects] = useState(projects);
   const navigate = useNavigate();
@@ -28,10 +28,13 @@ const Projects = ({ ids,tags }) => {
     setFilteredProjects(filtered);
   }, [projects, ids, tags]);
   
+  /*
   const handleTagClick = (tag) => {
     // Update the URL
-    navigate(`/tags/${tag}`);
+    //navigate(`/tags/${tag}`);
+    handleTagClick(tag);
   }
+    */
 
   /*
   const handleFilter = (filteredProjects) => {

@@ -30,9 +30,10 @@ const App = () => {
 
   const handleTagClick = (tag) => {
     console.log("Tag clicked:", tag); // Simulated use of 'tag'
+    setTarget('projects');
   }
 
-  const MainPageWrapper = () => {
+  const MainPageWrapper = ({ handleTagClick }) => {
     let { tags, ids } = useParams();
     tags = tags ? tags.split(',') : [];
     ids = ids ? ids.split(',').map(Number) : [];
@@ -49,14 +50,14 @@ const App = () => {
 
     return (
       <>
-        <div id="introduction"><Introduction /></div>
-        <div id="projects"><Projects tags={tags} ids={ids} handleRoute={handleRoute} /></div>
+        <div id="introduction"><Introduction handleTagClick={handleTagClick} /></div>
+        <div id="projects"><Projects tags={tags} ids={ids} handleRoute={handleRoute} handleTagClick={handleTagClick} /></div>
         <div id="contact"><Contact /></div>
       </>
     );
   }
 
-  const ProjectPageWrapper = () => {
+  const ProjectPageWrapper = ({ handleTagClick }) => {
     const { id } = useParams();
     return (
       <ProjectPage id={id} handleTagClick={handleTagClick} />
@@ -72,11 +73,11 @@ const App = () => {
       <Router basename={baseUrl}>
         <Navbar handleRoute={handleRoute} />
         <Routes>
-          <Route path="/id/:id" element={<ProjectPageWrapper />} />
-          <Route path="/tags/:tags" element={<MainPageWrapper target={'projects'}/>} />
-          <Route path="/ids/:ids" element={<MainPageWrapper target={'projects'}/>} />
-          <Route path="/contact" element={<MainPageWrapper target={'contact'}/>} />
-          <Route path="/" element={<MainPageWrapper target={'introduction'}/>} />
+          <Route path="/id/:id" element={<ProjectPageWrapper handleTagClick={handleTagClick} />} />
+          <Route path="/tags/:tags" element={<MainPageWrapper target={'projects'} handleTagClick={handleTagClick} />} />
+          <Route path="/ids/:ids" element={<MainPageWrapper target={'projects'} handleTagClick={handleTagClick} />} />
+          <Route path="/contact" element={<MainPageWrapper target={'contact'} handleTagClick={handleTagClick} />} />
+          <Route path="/" element={<MainPageWrapper target={'introduction'} handleTagClick={handleTagClick} />} />
         </Routes>
       </Router>
     </div>
