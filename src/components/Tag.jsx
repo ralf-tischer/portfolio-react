@@ -49,17 +49,30 @@ const Tag = ({ tagName,
     }
   }
 
-  return (
-    <div
-      className='tag button'
-      style={tagStyle}
-      onClick={() => onTagClick(tagName)}
-      title={tagProps.tag_long + (clickable === true ? "\nClick to set filter." : "")}
-    >
-      {tagName}
-      {starred && <span className="star">{stars(tagProps.rating)}</span>}
-    </div>
-  );
+  if (clickable) {
+    return (
+      <div
+        className='tag button'
+        style={tagStyle}
+        onClick={() => onTagClick(tagName)}
+        title={tagProps.tag_long + "\nClick to set filter."}
+      >
+        {tagName}
+        {starred && <span className="star">{stars(tagProps.rating)}</span>}
+      </div>
+    );
+  } else {
+    return (
+      <div
+        className='tag button'
+        style={tagStyle}
+        title={tagProps.tag_long}
+      >
+        {tagName}
+        {starred && <span className="star">{stars(tagProps.rating)}</span>}
+      </div>
+    );
+  }
 }
 
 export default Tag;
