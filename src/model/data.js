@@ -84,7 +84,7 @@ const PROJECTS = [
         img: "pl-ui-thumbnail.png",
         project_url: "/projects/pl-ui/pl-ui.html",
         links: [
-            { "title": "Demo. Username: demo, Password: ralf-tischer", "type": "www", "url": "https://ralf-tischer.github.io/product-backlog-react-ui/" },
+            { "title": "Demo. Username: demo, Password: tischer", "type": "www", "url": "https://ralf-tischer.github.io/product-backlog-react-ui/" },
             { "title": "GitHub repository", "type": "github", "url": "https://github.com/ralf-tischer/product-backlog-react-ui" }
         ],
         tags: ["javascript", "react", "html", "api", "frontend", "agile"]
@@ -97,7 +97,7 @@ const PROJECTS = [
         img: "pl-api-thumbnail.png",
         project_url: "/projects/pl-api/pl-api.html",
         links: [
-            { "title": "Demo", "type": "www", "url": "https://ralf-tischer.github.io/product-backlog-react-ui/" },
+            { "title": "Demo. Username: demo, Password: tischer", "type": "www", "url": "https://ralf-tischer.github.io/product-backlog-react-ui/" },
             { "title": "GitHub repository", "type": "github", "url": "https://github.com/ralf-tischer/product-backlog-flask-api" }
         ],
         tags: ["python", "flask", "api", "sql", "backend"]
