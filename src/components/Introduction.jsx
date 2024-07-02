@@ -1,18 +1,8 @@
 import React from 'react';
-import { useNavigate } from 'react-router-dom';
 import Tags from './Tags.jsx';
 const { mySkills } = require('../model/data.js');
 
 const Introduction = ({ handleTagClick }) => {
-    const navigate = useNavigate();
-
-    /*
-    const handleTagClick = (tag) => {
-        // Update the URL
-        //navigate(`/tags/${tag}`);
-        handleTagClick(tag);
-    }
-    */
 
     return (
         <div className='detail'>
