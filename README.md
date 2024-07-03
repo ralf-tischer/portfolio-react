@@ -24,13 +24,14 @@ Projects have tags as attributes. In the overview, projects can be filtered by t
 
 | Component | Props | States | Notes |
 |---|---|---|---|
-| App | | target | 
-| Navbar | handleRoute | | Utilizes useNavigate() to change url |
-| Introduction | | | Utilizes useNavigate() to change filter |
+| App | | target, tags | 
+| Navbar | handleRoute | | |
+| Introduction | handleTagClick | | |
 | Contact | | | |
 | Filter | projects, onFilter | | Not used anymore in `Projects` |
+| MainPageWrapper | ids, tags, handleTagClick, handleRoute | | handleRoute to be removed | 
 | ProjectPage | handleTagClick | projectHtml | |
-| Projects | ids, tags | projects, filteredProjects | Utilizes useNavigate() to change filter |
+| Projects | ids, tags, handleTagClick | projects, filteredProjects | Utilizes useNavigate() to change filter |
 | ProjectCard | key, project, handleOpenProjectDetails, handleTagClick | imgIsLandscape | |
 | ProjectTitle | project, handleOpenProjectDetails | |
 | ProjectImg | project, setIsLandscape 
