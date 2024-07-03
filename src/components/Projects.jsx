@@ -28,20 +28,6 @@ const Projects = ({ ids, tags, handleTagClick }) => {
     setFilteredProjects(filtered);
   }, [projects, ids, tags]);
   
-  /*
-  const handleTagClick = (tag) => {
-    // Update the URL
-    //navigate(`/tags/${tag}`);
-    handleTagClick(tag);
-  }
-    */
-
-  /*
-  const handleFilter = (filteredProjects) => {
-    setFilteredProjects(filteredProjects);
-  };
-  */
-  
   return (
     <div>
       <h2>Projects</h2>
