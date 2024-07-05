@@ -39,6 +39,9 @@ const ProjectPage = ({ handleTagClick }) => {
             }
         };
         loadProjectPage();
+        
+        // Scroll to the top of the page
+        window.scrollTo(0, 0);
     }, [id, project]);
 
     const { minId, maxId } = getMinMaxId();
