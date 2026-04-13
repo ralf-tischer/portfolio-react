@@ -12,6 +12,25 @@ const ProjectPage = ({ handleTagClick }) => {
     const [projectHtml, setProjectHtml] = useState('');
     const project = myProjects.find(project => project.id === parseInt(id));
 
+    useEffect(() => {
+        if (!project) return;
+        
+        const loadProjectPage = async () => {
+            try {
+                const response = await fetch('/portfolio-react/assets/' + project.project_url);
+                const data = await response.text();
+                setProjectHtml(data);
+            } catch (error) {
+                setProjectHtml(`<h1>Error loading project page</h1><p>${error.message}</p>`);
+                console.error(error);
+            }
+        };
+        loadProjectPage();
+        
+        // Scroll to the top of the page
+        window.scrollTo(0, 0);
+    }, [id, project]);
+
     if (!project) {
         return (
             <div className='detail'>
@@ -35,23 +54,6 @@ const ProjectPage = ({ handleTagClick }) => {
         });
         return { minId, maxId };
     };
-
-    useEffect(() => {
-        const loadProjectPage = async () => {
-            try {
-                const response = await fetch('/portfolio-react/assets/' + project.project_url);
-                const data = await response.text();
-                setProjectHtml(data);
-            } catch (error) {
-                setProjectHtml(`<h1>Error loading project page</h1><p>${error.message}</p>`);
-                console.error(error);
-            }
-        };
-        loadProjectPage();
-        
-        // Scroll to the top of the page
-        window.scrollTo(0, 0);
-    }, [id, project]);
 
     const { minId, maxId } = getMinMaxId();
 
