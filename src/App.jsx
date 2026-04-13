@@ -12,14 +12,10 @@ console.log('process.env.PUBLIC_URL:', process.env.PUBLIC_URL);
 console.log('baseUrl:', baseUrl);
 
 const App = () => {
-  
-  let { tags: tagsInitial, ids } = useParams();
-  tagsInitial = tagsInitial ? tagsInitial.split(',') : [];
-  ids = ids ? ids.split(',').map(Number) : [];
-
   const [target, setTarget] = useState(null);
-  const [tags, setTags] = useState(tagsInitial);
-  
+  const [tags, setTags] = useState([]);
+  const [ids, setIds] = useState([]);
+
   useEffect(() => {
     const timer = setTimeout(() => {
       const element = document.getElementById(target);
@@ -27,7 +23,7 @@ const App = () => {
         element.scrollIntoView({ behavior: 'smooth' });
       }
     }, 150);
-  
+
     return () => clearTimeout(timer);
   }, [target]);
 
@@ -36,10 +32,18 @@ const App = () => {
     setTarget('projects');
   }
 
-  const ProjectPageWrapper = ({ handleTagClick }) => {
-    const { id } = useParams();
+  const ProjectPageWrapper = () => {
     return (
-      <ProjectPage id={id} handleTagClick={handleTagClick} />
+      <ProjectPage handleTagClick={handleTagClick} />
+    );
+  }
+
+  const MainPageRoute = () => {
+    const { tags: tagsParam, ids: idsParam } = useParams();
+    const tagsToUse = tagsParam ? tagsParam.split(',') : tags;
+    const idsToUse = idsParam ? idsParam.split(',').map(Number) : ids;
+    return (
+      <MainPageWrapper ids={idsToUse} tags={tagsToUse} handleTagClick={handleTagClick} />
     );
   }
 
@@ -53,11 +57,11 @@ const App = () => {
       <Router basename={baseUrl}>
         <Navbar handleRoute={handleRoute} />
         <Routes>
-          <Route path="/id/:id" element={<ProjectPageWrapper handleTagClick={handleTagClick} />} />
-          <Route path="/tags/:tags" element={<MainPageWrapper ids={ids} tags={tags} handleTagClick={handleTagClick} />} />
-          <Route path="/ids/:ids" element={<MainPageWrapper ids={ids} tags={tags} handleTagClick={handleTagClick} />} />
-          <Route path="/contact" element={<MainPageWrapper ids={ids} tags={tags} handleTagClick={handleTagClick} />} />
-          <Route path="/" element={<MainPageWrapper ids={ids} tags={tags} handleTagClick={handleTagClick} />} />
+          <Route path="/id/:id" element={<ProjectPageWrapper />} />
+          <Route path="/tags/:tags" element={<MainPageRoute />} />
+          <Route path="/ids/:ids" element={<MainPageRoute />} />
+          <Route path="/contact" element={<MainPageRoute />} />
+          <Route path="/" element={<MainPageRoute />} />
         </Routes>
       </Router>
     </div>

@@ -12,6 +12,15 @@ const ProjectPage = ({ handleTagClick }) => {
     const [projectHtml, setProjectHtml] = useState('');
     const project = myProjects.find(project => project.id === parseInt(id));
 
+    if (!project) {
+        return (
+            <div className='detail'>
+                <h1>Project not found</h1>
+                <p>The requested project does not exist.</p>
+            </div>
+        );
+    }
+
     const getMinMaxId = () => {
         let minId = myProjects[0].id;
         let maxId = myProjects[0].id;
